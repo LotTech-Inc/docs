@@ -1,5 +1,5 @@
 ---
-title: "LotTech Voice: AI Voice Agent for Dealerships"
+title: "LotTech Voice: AI Voice Agent for Automotive Dealerships"
 sidebarTitle: "Introduction"
 description: "LotTech Voice answers inbound dealership calls automatically, captures requests, and gives your team a real-time communications hub."
 ---
@@ -24,20 +24,20 @@ LotTech Voice is organized into modules. Each module covers a specific area of y
   <Card title="Communications" icon="phone" href="/communications/interactions">
     Manage customer profiles, view call transcripts and recordings, track service and parts requests, and review call logs — all in one place.
   </Card>
+  <Card title="Reporting" icon="chart-line" href="/analytics/overview">
+    Access the analytics KPI strip and performance dashboards. Users with this permission can track interaction trends and request fulfillment metrics across any date range.
+  </Card>
+  <Card title="Parts" icon="wrench" href="/rooftop/overview">
+    Manage parts supplier organizations, track parts-related requests, and link parts inventory to service interactions captured by the voice agent.
+  </Card>
   <Card title="Commerce" icon="cart-shopping" href="/commerce/orders">
     Process customer orders, apply custom pricing rules, and track order fulfillment from creation through completion.
   </Card>
-  <Card title="Inventory" icon="warehouse" href="/commerce/inventory">
-    Monitor retail vehicle inventory, parts stock, and rental fleet availability. Keep listings accurate so the voice agent can answer inventory questions correctly.
+  <Card title="Inventory" icon="warehouse" href="/rooftop/overview">
+    Monitor retail vehicle inventory and parts stock. Keep listings accurate so the voice agent can answer inventory questions correctly.
   </Card>
-  <Card title="Analytics" icon="chart-line" href="/analytics/overview">
-    Track key performance indicators, visualize call and request trends over time, and compare performance across date ranges or rooftops.
-  </Card>
-  <Card title="Integrations" icon="plug" href="/integrations/voice-agent">
-    Connect your existing tools — Google Calendar, Stripe, xTime, DealerFX, and Twilio — so the voice agent can book appointments, process payments, and sync data automatically.
-  </Card>
-  <Card title="Admin Tools" icon="shield-halved" href="/admin/manage-users">
-    Create and manage user accounts, define role-based permissions, create new rooftops, and control which modules are active for each location.
+  <Card title="Rental" icon="car" href="/rooftop/overview">
+    Manage your rental fleet, track vehicle availability, and surface rental options to customers during inbound calls.
   </Card>
 </CardGroup>
 
@@ -51,12 +51,14 @@ LotTech Voice has two user roles. The role assigned to your account controls wha
 | Create and manage rooftops | ✓ | — |
 | Create and manage users | ✓ | — |
 | Manage rooftop settings | ✓ | Limited |
-| Access Communications module | ✓ | ✓ (if enabled) |
-| Access Commerce module | ✓ | ✓ (if enabled) |
-| Access Inventory module | ✓ | ✓ (if enabled) |
-| Access Analytics module | ✓ | ✓ (if enabled) |
+| Communications module | ✓ | ✓ (if enabled) |
+| Reporting module | ✓ | ✓ (if enabled) |
+| Parts module | ✓ | ✓ (if enabled) |
+| Commerce module | ✓ | ✓ (if enabled) |
+| Inventory module | ✓ | ✓ (if enabled) |
+| Rental module | ✓ | ✓ (if enabled) |
 
-**Admins** have full platform access and are responsible for initial setup, user provisioning, and rooftop configuration. **Managers** work within the rooftops they've been assigned to and can access modules that have been enabled for their role at the rooftop level.
+**Admins** have full platform access and are responsible for initial setup, user provisioning, and rooftop configuration. After login, Admins are redirected to the cross-rooftop Admin dashboard. **Managers** work within the rooftops they've been assigned to and can access modules that have been enabled for their role at the rooftop level. After login, Managers are redirected to their rooftop's dashboard.
 
 <Note>
   Module availability depends on your dealership's LotTech Voice subscription. Contact your LotTech representative to enable or disable specific modules for any rooftop.

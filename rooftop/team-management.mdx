@@ -1,10 +1,10 @@
 ---
-title: "Manage Your Rooftop Team"
+title: "Manage Rooftop Team Members, Roles, and Permissions"
 sidebarTitle: "Team Management"
-description: "Assign managers to your rooftop in LotTech Voice so they can view and handle communications, requests, and settings for that location."
+description: "Assign roles to team members on a rooftop, manage their permissions, and control email notification and voice transfer preferences per person."
 ---
 
-Every rooftop in LotTech Voice has a team of assigned managers who can access its dashboard, handle customer communications, and manage settings. Because access is scoped per rooftop, adding someone to your team gives them visibility into that location only — not the rest of your organization. Only **Admins** can modify rooftop team assignments.
+Every rooftop in LotTech Voice has a team of assigned members who can access its dashboard, handle customer communications, and manage settings. Because access is scoped per rooftop, adding someone to your team gives them visibility into that location only — not the rest of your organization. Only **Admins** and users with team management permissions can modify rooftop team assignments.
 
 ## Viewing the Team
 
@@ -17,48 +17,87 @@ Every rooftop in LotTech Voice has a team of assigned managers who can access it
   </Step>
 </Steps>
 
-The Team tab lists every manager currently assigned to the rooftop, showing each person's **name** and **role**. Use this view to confirm who has access before assigning new members or removing existing ones.
+The Team tab lists every member currently assigned to the rooftop, showing each person's **name**, **email address**, and **roles**. It also shows per-member toggles for email notifications and voice call transfers. Use this view to confirm who has access before assigning new members or removing existing ones.
 
-## Assigning a Manager
+## Assigning a Role to an Existing User
+
+Use this flow when the person already has a LotTech Voice account and you want to give them a role at this rooftop.
 
 <Note>
-  Only **Admins** can assign managers to a rooftop.
+  Only **Admins** and users with team management permissions can assign roles to a rooftop.
 </Note>
 
 <Steps>
   <Step title="Open the Team tab">
     Navigate to Rooftop Settings > **Team**.
   </Step>
-  <Step title="Click Assign Manager">
-    Click the **Assign Manager** button in the upper area of the Team tab.
+  <Step title="Click Add Role">
+    Click the **Add Role** button in the upper area of the Team tab.
   </Step>
-  <Step title="Search for the user">
-    Type the person's name into the search field. Results will appear as you type.
+  <Step title="Select the user">
+    Search for and select the person you want to add. Admins can search across all users in the organization; other team managers see only members already at this rooftop.
+  </Step>
+  <Step title="Choose a role">
+    Select the appropriate role from the dropdown. Available roles depend on which modules are active for this rooftop:
+
+    - **Rooftop Admin** — full access to all settings for this rooftop
+    - **Parts Manager** — access to parts module (when Parts is active)
+    - **Cosmetics Manager** — access to cosmetics module (when Cosmetics is active)
+    - **Service Manager** — access to service module (when Service is active)
+    - **Commerce Manager** — access to commerce module (when Commerce is active)
+    - **Rental Manager** — access to rental module (when Rental is active)
+    - **Email Manager** — access to email module (when Email is active)
   </Step>
   <Step title="Confirm the assignment">
-    Select the correct user from the results and confirm the assignment. They will now appear in the Team list and have access to this rooftop.
+    Click **Assign Role**. The user now appears in the Team list with their new role.
   </Step>
 </Steps>
 
 <Note>
-  The user must already have an account in LotTech Voice before you can assign them to a rooftop. If the person you're looking for doesn't appear in the search results, go to **Admin → Manage Users** to create their account first, then return here to assign them.
+  A person can hold multiple roles at the same rooftop. Use the **Add Role** flow again to assign an additional role to someone already on the team.
 </Note>
 
-## Removing a Manager
+## Creating a New User and Assigning a Role
+
+If the person doesn't yet have a LotTech Voice account, an **Admin** can create their account and assign a role in a single step.
 
 <Note>
-  Only **Admins** can remove managers from a rooftop.
+  Only **Admins** can create new user accounts.
 </Note>
 
 <Steps>
   <Step title="Open the Team tab">
     Navigate to Rooftop Settings > **Team**.
   </Step>
-  <Step title="Find the manager">
-    Locate the person you want to remove in the team list.
+  <Step title="Click Add User">
+    Click the **Add User** button. This option is visible to Admins only.
   </Step>
-  <Step title="Click the remove action">
-    Click the remove icon or action button next to their name.
+  <Step title="Fill in the user's details">
+    Enter the person's first name, last name, email address, password, and optionally a phone number.
+  </Step>
+  <Step title="Choose a role">
+    Select the role to assign to this person at the current rooftop.
+  </Step>
+  <Step title="Create the user">
+    Click **Create User**. LotTech Voice creates the account and assigns the role to this rooftop in one action.
+  </Step>
+</Steps>
+
+## Removing a Role
+
+<Note>
+  Only **Admins** and users with team management permissions can remove roles from a rooftop.
+</Note>
+
+<Steps>
+  <Step title="Open the Team tab">
+    Navigate to Rooftop Settings > **Team**.
+  </Step>
+  <Step title="Find the member">
+    Locate the person whose role you want to remove in the team list.
+  </Step>
+  <Step title="Click the remove icon on their role">
+    Each role appears as a badge next to the person's name. Click the **×** on the role badge you want to remove.
   </Step>
   <Step title="Confirm">
     Confirm the removal when prompted.
@@ -66,17 +105,26 @@ The Team tab lists every manager currently assigned to the rooftop, showing each
 </Steps>
 
 <Warning>
-  Removing a manager from a rooftop immediately revokes their access to **all data for that location** — including communications, customers, requests, and logs. This action takes effect right away. If the removal was a mistake, you can reassign them using the steps above.
+  If the role you are removing is the person's **only role** at this rooftop, removing it also removes them from the rooftop entirely, immediately revoking their access to all data for that location — including communications, customers, requests, and logs. You can reassign them at any time using the steps above.
 </Warning>
+
+## Member Preferences
+
+Each team member has two per-rooftop preferences you can manage from the Team tab:
+
+- **Email notifications** — when enabled, the member receives email alerts for activity at this rooftop (off by default).
+- **Voice transfers** — when enabled, the AI voice agent can transfer live calls to this member (on by default).
+
+To change a preference, use the toggle next to the member's name in the Team list. Changes take effect immediately.
 
 ## What Team Members Can Do
 
-Once assigned to a rooftop, a manager's available actions depend on their **module permissions**. In general, rooftop team members can:
+Once assigned to a rooftop, a member's available actions depend on their **role and module permissions**. In general, rooftop team members can:
 
 - View the rooftop dashboard and activity feed
 - Handle inbound requests and customer communications
 - View customer records and conversation histories
 - Access call logs and AI interaction transcripts
-- Edit rooftop settings (managers can edit their own assigned rooftops; admins can edit any)
+- Edit rooftop settings within the modules their role covers
 
 For a full breakdown of what each role can access across the platform, see the [Roles and Permissions](/account/roles-and-permissions) guide.

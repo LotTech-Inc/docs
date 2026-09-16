@@ -1,53 +1,60 @@
 ---
-title: "Manage Users Across Your Platform"
+title: "Manage User Accounts and Roles Across Your Platform"
 sidebarTitle: "Manage Users"
-description: "Admins can view, create, edit, and deactivate user accounts for all dealership locations from the Manage Users page in LotTech Voice."
+description: "Admins can view, search, create, and delete user accounts for all dealership locations from the Manage Users page in LotTech Voice."
 ---
 
-The Manage Users page is your central control point for every account in your LotTech Voice platform. From here you can see all active staff members, invite new managers, update roles and rooftop assignments, and review deactivated accounts. Access to this area is restricted to users with the **Admin** role.
+The Manage Users page is your central control point for every account on your LotTech Voice platform. From here you can see all team members, add new users, filter by role, review deactivated accounts, and open any user's detail page to update their settings. Access to this area is restricted to users with the **Admin** role.
 
 ## Accessing User Management
 
-Navigate to **Admin** in the left sidebar, then select **Users**. The full URL is `/dashboard/admin/users`. If you do not see the Admin section in your sidebar, your account does not have the Admin role — contact your platform administrator to request access.
+Navigate to **Admin** in the left sidebar, then select **Users**. If you do not see the Admin section in your sidebar, your account does not have the Admin role — contact your platform administrator to request access.
 
-## Viewing Users
+## Viewing and Searching Users
 
-The Users page lists every active account in your platform. Each row displays the user's name, email address, assigned role, and the rooftops they have access to.
+The Users page lists every account in your platform. Each row displays the user's name, email address, assigned roles, and the date they were created and last signed in.
 
-To find a specific user, use the **search bar** at the top of the list — you can search by name or email address. To include deactivated accounts in the list, toggle **Show Deleted** on. Deleted users appear with a visual indicator so you can distinguish them from active accounts at a glance.
+To find a specific user, type in the **search bar** at the top of the list — you can search by name or email address. To include deactivated accounts in the list, enable the **Show Deleted** toggle. Deleted users appear highlighted so you can distinguish them from active accounts at a glance.
+
+## Filtering by Role
+
+Use the **role filter** dropdown to narrow the list to a specific role type. Available filters include:
+
+- Administrator
+- Rooftop Admin
+- Parts Manager
+- Cosmetics Manager
+- Service Manager
+- Commerce Manager
+- Rental Manager
+- Email Manager
 
 ## Creating a New User
 
+Click **Add User** at the top right of the Users page to open the user onboarding wizard. The wizard walks you through three steps:
+
 <Steps>
-  <Step title="Open the onboarding form">
-    Click **Create Manager** at the top right of the Users page.
+  <Step title="Personal information">
+    Enter the new user's first name, last name, email address, and a password for their account. A phone number is optional.
   </Step>
-  <Step title="Fill in user details">
-    Enter the new user's first name, last name, and email address in the User Onboarding Form.
+  <Step title="Role selection">
+    Select one or more roles for the user. You can assign any combination of roles — for example, a team member might hold both Parts Manager and Service Manager at the same rooftop.
   </Step>
-  <Step title="Submit the form">
-    Click **Submit**. The new user immediately receives an invitation email with a link to set their password and log in.
+  <Step title="Rooftop assignment">
+    If the selected role is scoped to a rooftop (such as Parts Manager or Rental Manager), choose the rooftop this user will work in. Only rooftops with the relevant product enabled appear in the list.
   </Step>
 </Steps>
 
+When you complete the wizard, the user account is created immediately and the new user can sign in with the credentials you provided.
+
 <Note>
-  All new users are created with the **Manager** role by default. If you need to grant Admin access, save the form first and then edit the user's role from their detail page.
+  Roles that are scoped to a rooftop — such as Parts Manager or Service Manager — require you to select a rooftop in step three. Platform-wide roles like Administrator do not require a rooftop assignment.
 </Note>
 
-## Editing a User
+## Opening a User's Detail Page
 
-Click on any user's name or row in the list to open their detail page. From the detail page you can update:
-
-- **Name** — first and last name as it appears across the platform
-- **Role** — Manager or Admin
-- **Assigned Rooftops** — which dealership locations the user can access
-
-Changes save as soon as you confirm them on the detail page. There is no separate save button — each field commits on update.
-
-## Assigning Rooftops
-
-A user can only view and work in the rooftops they are assigned to. From the user's detail page, scroll to the **Rooftop Access** section to add or remove rooftop assignments. Adding a rooftop gives the user immediate access to that location's dashboard, activity feed, and settings (within the limits of their role). Removing a rooftop revokes access the next time the user navigates or refreshes.
+Click any row in the Users list to open that user's detail page. From there you can review their full profile, update their settings, and manage their role and rooftop assignments.
 
 <Warning>
-  Changing a user's role takes effect immediately — there is no confirmation delay. If you remove the Admin role from a user who is currently logged in, they are logged out of all Admin views and redirected to the standard dashboard on their next page load. Make sure you intend the change before saving.
+  Deleting a user immediately revokes their access to the platform. Use the **Delete User** action on a user's row only when you are certain you want to remove that account. Deleted users remain visible in the list when **Show Deleted** is enabled.
 </Warning>

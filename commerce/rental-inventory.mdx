@@ -1,7 +1,7 @@
 ---
-title: "Track and Manage Your Rental Fleet"
+title: "Manage Your Rental and Loaner Fleet"
 sidebarTitle: "Rental Inventory"
-description: "LotTech Voice's Rental Inventory module lets you track your dealership's loaner and rental vehicle fleet, including fleet size and availability."
+description: "Track your loaner and rental fleet by VIN in LotTech Voice. Add and remove vehicles to keep your AI agent's availability data accurate and up to date."
 ---
 
 The Rental Inventory module keeps your loaner and rental fleet organized and visible — both to your team and to the AI voice agent that answers calls on your behalf. When a customer calls asking about a rental or loaner vehicle, your voice agent draws on this data to give accurate, up-to-date answers.
@@ -12,24 +12,84 @@ The Rental Inventory module keeps your loaner and rental fleet organized and vis
 
 ## Accessing Rental Inventory
 
-Navigate to **Rental Inventory** in the left sidebar to open the rental fleet management page. This option only appears when the `rental` module is enabled on your rooftop.
+Navigate to **Rental Inventory** in the left sidebar to open the rental fleet management page. The table displays each vehicle's VIN, year, make, model, and trim. The total fleet count appears in the page header.
 
-## Fleet Overview
+## Adding Vehicles
 
-Your home dashboard includes a **Rental** stat card that displays your total fleet size at a glance. This gives managers and service advisors an immediate count of vehicles available without navigating to the full inventory page.
-
-Check this card regularly to ensure the fleet count stays accurate — especially after adding or removing vehicles.
-
-## Managing Vehicles
-
-From the Rental Inventory page, you can add, update, and remove vehicles in your fleet:
-
-- **Add a vehicle** — click **Add Vehicle** and fill in the vehicle details (year, make, model, and any additional notes)
-- **Update a vehicle** — click a vehicle record to edit its details, availability status, or notes
-- **Remove a vehicle** — use the delete option on a vehicle record to retire it from the fleet
-
-Keep your rental inventory current so the data your voice agent references is always accurate.
+<Steps>
+  <Step title="Open the Add Vehicles modal">
+    Click the **Add Vehicles** button in the top-right corner of the page.
+  </Step>
+  <Step title="Enter vehicle VINs">
+    Add vehicles by VIN — either one at a time or in bulk. LotTech Voice automatically looks up year, make, model, and trim from the VIN you provide.
+  </Step>
+  <Step title="Confirm">
+    Click **Save** or **Add** to add the vehicles to your fleet. They appear in the table immediately.
+  </Step>
+</Steps>
 
 <Tip>
-  Fleet size and availability data from Rental Inventory feeds directly into the AI voice agent. An up-to-date fleet list means your agent can accurately tell callers how many rentals are available — reducing hold times and improving the caller experience.
+  Fleet vehicle data feeds directly into the AI voice agent. An up-to-date fleet list means your agent can accurately tell callers how many rentals are available — reducing hold times and improving the caller experience.
 </Tip>
+
+## Viewing and Editing Vehicle Details
+
+Click any vehicle row to open the **Vehicle Details** panel. From here you can:
+
+- View the full VIN, year, make, model, and trim
+- Add or edit a **description** or notes for the vehicle
+- **Re-Enrich** the vehicle to refresh its data from the VIN lookup service if details are missing or outdated
+
+<Note>
+  The VIN is the primary identifier for each vehicle. Make, model, and trim are populated automatically — you don't need to enter them manually.
+</Note>
+
+## Re-Enriching Vehicle Data
+
+If a vehicle's year, make, model, or trim is missing or incorrect, you can trigger a fresh lookup:
+
+<Steps>
+  <Step title="Locate the vehicle">
+    Find the vehicle in the table using the search bar or by scrolling.
+  </Step>
+  <Step title="Re-Enrich">
+    Click the **Re-Enrich** action on the vehicle row (or open the vehicle details and click **Re-Enrich** there). LotTech Voice fetches updated data for that VIN and saves it automatically.
+  </Step>
+</Steps>
+
+## Removing Vehicles
+
+**To remove a single vehicle:**
+
+<Steps>
+  <Step title="Locate the vehicle">
+    Find the vehicle in the table.
+  </Step>
+  <Step title="Delete it">
+    Click the **delete icon** on the vehicle row and confirm. The vehicle is removed from your fleet immediately.
+  </Step>
+</Steps>
+
+**To remove multiple vehicles at once:**
+
+<Steps>
+  <Step title="Select vehicles">
+    Check the checkbox next to each vehicle you want to remove. Use the header checkbox to select all vehicles on the current page.
+  </Step>
+  <Step title="Delete selected">
+    Click **Delete Selected** in the selection toolbar that appears.
+  </Step>
+  <Step title="Confirm">
+    Confirm the deletion in the dialog. All selected vehicles are removed at once.
+  </Step>
+</Steps>
+
+<Warning>
+  Deleting vehicles from Rental Inventory is permanent. Removed vehicles will no longer be available to the AI voice agent when answering caller questions about fleet availability.
+</Warning>
+
+## Searching and Pagination
+
+Use the **search bar** at the top of the table to find vehicles by VIN, make, model, or other details. Results update as you type.
+
+The rental inventory table paginates at **50 vehicles per page**. Use the pagination controls at the bottom to move between pages.

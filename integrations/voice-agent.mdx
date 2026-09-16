@@ -1,5 +1,5 @@
 ---
-title: "How the LotTech Voice AI Agent Works"
+title: "How Your LotTech Voice AI Agent Handles Inbound Calls"
 sidebarTitle: "Voice Agent"
 description: "LotTech Voice's AI agent answers inbound dealership calls, creates service and parts requests, and transfers calls to your team when needed."
 ---
@@ -29,11 +29,13 @@ When a caller dials your dealership's Twilio number, here is what happens from r
 
 The AI agent transfers a call to a human when the caller explicitly asks to speak with someone, or when the AI determines it cannot fulfill the request on its own. Transfers are routed to the department phone number you configure in **Rooftop Settings**.
 
-- If a service-related call needs escalation, the call is transferred to your **Service line**.
-- If a parts-related call needs escalation, the call is transferred to your **Parts line**.
+- If a service-related call needs escalation, the call is transferred to your **Service** line.
+- If a parts-related call needs escalation, the call is transferred to your **Parts** line.
+- If a cosmetics-related call needs escalation, the call is transferred to your **Cosmetics** line.
+- If a rental-related call needs escalation, the call is transferred to your **Rental** line.
 - General or unclassified escalations go to your default transfer number.
 
-To set or update department transfer numbers, go to **Rooftop Settings → Overview** and update the relevant phone number fields. See [Phone Numbers](/integrations/twilio-phone-numbers) for details.
+To set or update department transfer numbers, go to **Rooftop Settings → Overview** and update the relevant phone number fields under **Department Phones**. See [Phone Numbers](/integrations/twilio-phone-numbers) for details.
 
 ## SMS Follow-Ups
 
@@ -59,7 +61,7 @@ You can customize how the AI agent sounds to callers — including voice selecti
 
 Visit the [Voice Configuration](/rooftop/configure-voice) page to:
 
-- Choose a **voice** from available male and female options across Rime (Coda) and Cartesia TTS providers
+- Choose a **voice** from available male and female options across Rime and Cartesia TTS providers
 - Set **speaking speed** between 0.6× (slower) and 1.5× (faster)
 - Adjust **echo and reverb** intensity from 0% to 100%
 
@@ -70,5 +72,5 @@ Selecting a voice that matches your dealership's brand tone makes a strong first
 When a caller reaches your Twilio number outside your configured business hours, the AI agent still answers the call. It informs the caller that the dealership is currently closed and captures their request so your team can follow up the next business day. No call goes unanswered and no lead is lost.
 
 <Tip>
-  Keep your dealership's business hours up to date in Rooftop Settings so callers receive accurate information about when to expect a callback. Incorrect hours can frustrate callers and create unnecessary follow-up work for your team.
+  Keep your dealership's business hours up to date in **Rooftop Settings → Operations** so callers receive accurate information about when to expect a callback. Incorrect hours can frustrate callers and create unnecessary follow-up work for your team.
 </Tip>

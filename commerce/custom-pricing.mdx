@@ -1,58 +1,100 @@
 ---
-title: "Set Up Custom Pricing for Customers"
+title: "Configure Custom Pricing and Discount Rules"
 sidebarTitle: "Custom Pricing"
-description: "Create special price rules in LotTech Voice for specific customers or wholesale buyers, overriding standard inventory prices."
+description: "Set up customer groups and discount rules in LotTech Voice to offer special pricing to fleet accounts, wholesale buyers, or preferred service customers."
 ---
 
-Custom Pricing lets you offer different prices to specific customers or organizations — such as fleet account holders, wholesale buyers, or preferred service clients — without altering the standard prices in your inventory. Rules are applied automatically on the customer-facing storefront when a matched customer places an order.
+Custom Pricing lets you offer different prices to specific customers or groups — such as fleet account holders, wholesale buyers, or preferred service clients — without altering the standard prices in your inventory. You do this through two building blocks: **Customer Groups** and **Discount Rules**.
 
 <Note>
   Custom Pricing requires the `commerce` module permission on your rooftop. Contact your LotTech administrator if this option is not visible in your sidebar.
 </Note>
 
-## What Is Custom Pricing?
+## How Custom Pricing Works
 
-Standard inventory prices apply to all customers by default. Custom Pricing gives you the flexibility to create exceptions — assigning a specific price for a particular item to a specific customer or organization. This is useful for:
+Custom pricing is built from two components:
 
-- **Fleet accounts** that negotiate fixed per-unit pricing on frequently ordered parts
-- **Wholesale buyers** who receive volume-based or margin-adjusted rates
-- **Preferred service customers** with contractual pricing agreements
+- **Customer Groups** — named segments of customers (for example, "Wholesale", "Fleet Accounts"). A customer can belong to only one group per rooftop.
+- **Discount Rules** — percentage or fixed-amount discounts that apply to a group or an individual customer. A rule can target all inventory items or a single specific item.
 
-Custom pricing rules override the standard item price only for the matched customer. All other customers continue to see and pay the default price.
+When a customer in a group places an order on the storefront, any active discount rules for their group are applied automatically at checkout. Customers not in any group continue to pay standard prices.
 
-## Accessing Custom Pricing
+## Customer Groups
 
-Navigate to **Custom Pricing** in the left sidebar to open the pricing rules page. The `commerce` module permission is required to view and manage this section.
-
-## Creating a Pricing Rule
+### Creating a Group
 
 <Steps>
-  <Step title="Open the new rule form">
-    Click **Add Pricing Rule** on the Custom Pricing page.
+  <Step title="Open the New Group form">
+    Click **New Group** in the Customer Groups section of the Custom Pricing page.
   </Step>
-  <Step title="Select the customer or organization">
-    Search for and select the customer account or organization this rule applies to.
+  <Step title="Name the group">
+    Enter a **Group Name** (for example, "Wholesale" or "Fleet Accounts") and an optional description.
   </Step>
-  <Step title="Choose the item">
-    Search your inventory and select the specific part or retail item this price applies to.
-  </Step>
-  <Step title="Set the custom price">
-    Enter the custom price for this customer–item combination. This price will replace the standard inventory price for that customer at checkout.
-  </Step>
-  <Step title="Save the rule">
-    Click **Save**. The rule is active immediately and will apply the next time the matched customer views or purchases that item on the storefront.
+  <Step title="Create">
+    Click **Create**. The group appears in the list immediately.
   </Step>
 </Steps>
 
-## Managing Rules
+### Adding Customers to a Group
 
-All active pricing rules are listed on the Custom Pricing page. From here you can:
-
-- **Edit a rule** — click the rule row to modify the customer, item, or price
-- **Delete a rule** — click the delete icon on a rule row and confirm. The item reverts to standard pricing for that customer immediately.
-
-Review your pricing rules periodically to ensure custom rates are still accurate and aligned with your current agreements.
+<Steps>
+  <Step title="Select the group">
+    Click a group in the list to expand its member management panel.
+  </Step>
+  <Step title="Enter a customer email">
+    Type the customer's email address in the field and click **Add**.
+  </Step>
+</Steps>
 
 <Note>
-  Custom pricing rules only take effect on the customer-facing storefront. When you view order details in the LotTech Voice dashboard, you will always see the actual price the customer was charged — which may differ from the standard inventory price when a custom rule applied.
+  A customer can only belong to one group per rooftop. Adding a customer to a new group automatically moves them out of any previous group.
 </Note>
+
+### Removing a Customer from a Group
+
+Click the **remove icon** next to any member in the expanded group panel and confirm. The customer reverts to standard (base) pricing immediately.
+
+### Deleting a Group
+
+Click the **delete icon** on a group row and confirm. Deleting a group removes all its members and any discount rules associated with it.
+
+## Discount Rules
+
+### Creating a Discount Rule
+
+<Steps>
+  <Step title="Open the Add Rule form">
+    Click **Add Rule** in the Discount Rules section.
+  </Step>
+  <Step title="Name the rule">
+    Enter a descriptive **Rule Name** (for example, "Wholesale 15% Off"). This name is visible to customers on their orders.
+  </Step>
+  <Step title="Select a target">
+    Choose whether the rule applies to a **Customer Group** or a **Specific Customer** (by email address).
+  </Step>
+  <Step title="Scope to an item (optional)">
+    Optionally search for and select a specific inventory item. If you leave this blank, the rule applies to all items in the storefront.
+  </Step>
+  <Step title="Set the discount">
+    Choose a discount type:
+    - **Percentage (%)** — deduct a percentage of the item price (for example, 15 for 15% off)
+    - **Fixed Amount ($)** — deduct a flat dollar amount from the item price
+
+    Enter the discount value. A preview of the discounted price appears automatically.
+  </Step>
+  <Step title="Create">
+    Click **Create**. The rule is active immediately and applies the next time a matched customer views or purchases items on the storefront.
+  </Step>
+</Steps>
+
+### Managing Rules
+
+All active and inactive discount rules are listed in the Discount Rules section. From here you can:
+
+- **Enable or disable a rule** — click the **Active / Inactive** toggle on a rule row to turn it on or off without deleting it
+- **Edit a rule** — click the **edit icon** on a rule row to update its name, item scope, discount type, or value
+- **Delete a rule** — click the **delete icon** on a rule row and confirm. The rule is removed immediately and affected customers revert to standard pricing.
+
+<Tip>
+  Use the Active/Inactive toggle to temporarily suspend a discount (for example, at the end of a promotional period) without losing the rule configuration.
+</Tip>

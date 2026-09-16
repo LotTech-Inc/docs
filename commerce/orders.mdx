@@ -1,7 +1,7 @@
 ---
-title: "Manage Dealership Orders in LotTech Voice"
+title: "Track and Manage Customer Orders"
 sidebarTitle: "Orders"
-description: "The Orders module tracks every customer purchase from confirmation to delivery. Filter, search, and manage order status from a single view."
+description: "Monitor every customer order from confirmation through fulfillment. Filter by status or date, archive completed orders, and track revenue in one view."
 ---
 
 The Orders module gives you a complete picture of every customer purchase at your dealership — from the moment an order is placed through fulfillment and delivery. Use it to monitor revenue, track fulfillment progress, and keep your team aligned on what needs attention.
@@ -26,19 +26,20 @@ Every order moves through a defined lifecycle. The table below describes what ea
 
 Navigate to **Orders** in the left sidebar to open the orders list. At the top of the page, a stats strip gives you an at-a-glance summary of your activity:
 
-- **Total Orders** — the total number of orders in the current view
-- **Total Revenue** — combined revenue across displayed orders
-- **Pending** — orders in a confirmed or unactioned state
-- **Processing / Shipping** — orders actively being fulfilled or in transit
+- **Total** — the total number of orders across all statuses
+- **Needs Action** — orders in a Confirmed or Processing state that require attention
+- **Shipped** — orders actively in transit to customers
+- **Complete** — orders that have been fully fulfilled
+- **Revenue** — combined revenue across all non-cancelled orders
 
-Each row in the list shows the order number, customer name, status, item count, and order total.
+Each row in the list shows the order number, customer name, fulfillment type, item count, total, and status.
 
 ## Filtering and Searching
 
 Use the filter controls above the orders list to narrow your view:
 
 - **Status filter** — select one or more statuses (Confirmed, Processing, Shipped, Complete, Cancelled) to show only matching orders
-- **Date range** — pick a start and end date to limit results to a specific time window
+- **Date range** — pick a preset range or a custom start and end date to limit results to a specific time window
 - **Search bar** — type an order number or customer name to find a specific order instantly
 
 Combine filters and search to zero in on exactly what you need — for example, all **Shipped** orders from last week for a particular customer.
@@ -57,16 +58,16 @@ Use the detail page to verify what was ordered and confirm fulfillment milestone
 
 ## Archiving Orders
 
-Once an order is complete or cancelled, you can archive it to keep your active orders list focused on work in progress.
+Once an order is complete or cancelled, you can archive it to keep your active orders list focused on work in progress. Archived orders can be restored at any time from the Archived Orders view.
 
 **To archive a single order:**
 
 <Steps>
   <Step title="Open the order">
-    Click the order in the list to open its detail page.
+    Click the order in the list to open its detail page, or click the **Archive** action on the order row.
   </Step>
   <Step title="Archive it">
-    Click the **Archive** button. The order moves out of the active list immediately.
+    Click the **Archive** button and confirm. The order moves out of the active list immediately.
   </Step>
 </Steps>
 
@@ -77,11 +78,11 @@ Once an order is complete or cancelled, you can archive it to keep your active o
     Check the checkbox next to each order you want to archive. You can select all visible orders using the header checkbox.
   </Step>
   <Step title="Trigger bulk archive">
-    Click the **Archive Selected** action that appears when one or more orders are checked.
+    Click the **Archive** button that appears in the toolbar when one or more orders are checked.
   </Step>
   <Step title="Confirm">
     Confirm the action in the dialog. All selected orders are archived at once.
   </Step>
 </Steps>
 
-To review archived orders, navigate to **Orders → Archived** from the sidebar. Archived orders are read-only and retained for your records.
+To review archived orders, click **Archived Orders** in the top-right of the Orders page. Archived orders can be restored from that view and are always retained for your records.

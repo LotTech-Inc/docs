@@ -1,22 +1,22 @@
 ---
-title: "Connect xTime for Service Scheduling"
+title: "Connect Xtime for Real-Time Service Scheduling"
 sidebarTitle: "xTime"
-description: "Integrate xTime with LotTech Voice so your AI agent can check real-time service availability and book appointments using your xTime account."
+description: "Integrate Xtime with LotTech Voice so your AI agent can check real-time service availability and book appointments directly in your Xtime system."
 ---
 
-Connecting xTime to LotTech Voice lets your AI agent tap directly into your dealership's xTime scheduling system. When a caller asks to book a service appointment, the AI checks real-time availability in xTime and confirms a slot with the caller on the spot — no hold time, no callback required.
+Connecting Xtime to LotTech Voice lets your AI agent tap directly into your dealership's Xtime scheduling system. When a caller asks to book a service appointment, the AI checks real-time availability in Xtime and confirms a slot with the caller on the spot — no hold time, no callback required.
 
-## What xTime Integration Does
+## What Xtime Integration Does
 
-With xTime connected, your AI voice agent can:
+With Xtime connected, your AI voice agent can:
 
-- **Query live availability** from your xTime system during an active call
+- **Query live availability** from your Xtime system during an active call
 - **Present open service slots** to the caller and confirm a booking without involving a service advisor
-- **Write the appointment back to xTime** so it appears in your existing scheduling workflow alongside appointments made through other channels
+- **Write the appointment back to Xtime** so it appears in your existing scheduling workflow alongside appointments made through other channels
 
-Without xTime (or another scheduling integration), the AI will still capture service appointment requests from callers and save them as pending items in your LotTech dashboard for your team to book manually.
+Without Xtime (or another scheduling integration), the AI will still capture service appointment requests from callers and save them as pending items in your LotTech dashboard for your team to book manually.
 
-## Setting Up xTime
+## Setting Up Xtime
 
 <Steps>
   <Step title="Open Rooftop Settings">
@@ -25,19 +25,22 @@ Without xTime (or another scheduling integration), the AI will still capture ser
   <Step title="Go to the Operations tab">
     Select the **Operations** tab within Rooftop Settings.
   </Step>
-  <Step title="Find the xTime section and click Setup">
-    Locate the **xTime** section on the Operations page and click **Setup** to open the xTime configuration modal.
+  <Step title="Select Xtime as your scheduling system">
+    In the **Service Scheduling Integration** section, open the **Appointment Scheduling System** dropdown and select **Xtime**.
   </Step>
-  <Step title="Enter your xTime credentials">
-    In the Setup modal, enter your **dealer code** and **API credentials** as provided by your xTime account manager.
+  <Step title="Click Configure">
+    A status panel appears below the dropdown. Click **Configure** to open the Xtime setup dialog.
   </Step>
-  <Step title="Save your credentials">
-    Click **Save** to apply the configuration. The AI agent will use these credentials to authenticate with xTime on every scheduling request.
+  <Step title="Enter your dealer code">
+    In the setup dialog, enter your **dealer code** as provided by your Xtime representative. Click **Validate** to verify the code before saving.
+  </Step>
+  <Step title="Save your configuration">
+    Once the dealer code is validated, click **Save Configuration** to complete the setup. The AI agent will use this dealer code to look up vehicle and scheduling data in Xtime on every call.
   </Step>
 </Steps>
 
 <Note>
-  Contact your **xTime account manager** to obtain the dealer code and API credentials required for this integration. LotTech support cannot provide xTime credentials on your behalf.
+  Contact your **Xtime representative** or check your Xtime admin portal settings to find your dealer code. A dealer code looks like `xts1234` or a similar short identifier. LotTech support cannot provide Xtime credentials on your behalf.
 </Note>
 
 ## How It Works During Calls
@@ -45,30 +48,30 @@ Without xTime (or another scheduling integration), the AI will still capture ser
 When a caller asks to schedule a service appointment, the AI agent handles the entire booking flow without transferring the call:
 
 1. The AI asks for the caller's vehicle details and preferred appointment date or time range.
-2. LotTech Voice queries xTime in real time for available service slots that match the request.
+2. LotTech Voice queries Xtime in real time for available service slots that match the request.
 3. The AI presents the available options to the caller and confirms their selection.
-4. The appointment is written to xTime and the caller receives an SMS confirmation.
+4. The appointment is written to Xtime and the caller receives an SMS confirmation.
 
-The appointment appears in xTime immediately, visible to your service advisors alongside all other scheduled appointments.
+The appointment appears in Xtime immediately, visible to your service advisors alongside all other scheduled appointments.
 
-## Disconnecting xTime
+## Disconnecting Xtime
 
-To remove your xTime integration:
+To remove your Xtime integration:
 
 <Steps>
   <Step title="Open Rooftop Settings → Operations">
     Navigate to **Rooftop Settings** and select the **Operations** tab.
   </Step>
-  <Step title="Open the xTime Setup modal">
-    Click **Setup** in the xTime section to open the configuration modal.
+  <Step title="Open the Xtime setup dialog">
+    In the **Service Scheduling Integration** section, click **Configure** next to the Xtime status.
   </Step>
-  <Step title="Remove your credentials and save">
-    Clear your credentials from the fields and click **Save** to disconnect the integration.
+  <Step title="Click Disconnect">
+    In the setup dialog, click **Disconnect** and confirm to remove the integration.
   </Step>
 </Steps>
 
-After disconnecting, the AI will fall back to capturing service appointment requests as pending items in your LotTech dashboard for your team to book manually through xTime or your preferred tool.
+After disconnecting, the AI will fall back to capturing service appointment requests as pending items in your LotTech dashboard for your team to book manually through Xtime or your preferred tool.
 
 <Tip>
-  Only one scheduling integration — **xTime** or **DealerFX** — needs to be active at a time. Choose the one that matches your dealer management system. Running both simultaneously is not required. See [DealerFX](/integrations/dealerfx) if you use DealerFX for service scheduling instead.
+  Only one scheduling integration — **Xtime** or **DealerFX** — needs to be active at a time. Choose the one that matches your dealer management system. Running both simultaneously is not required. See [DealerFX](/integrations/dealerfx) if you use DealerFX for service scheduling instead.
 </Tip>

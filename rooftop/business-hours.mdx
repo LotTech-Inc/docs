@@ -1,5 +1,5 @@
 ---
-title: "Set Business Hours and Closed Dates"
+title: "Set Business Hours, Closed Dates, and Vehicle Makes"
 sidebarTitle: "Business Hours"
 description: "Configure your dealership's open hours, holiday closures, and supported vehicle makes so your AI voice agent responds accurately to callers."
 ---
@@ -36,7 +36,7 @@ Closed dates let you block out specific days — like holidays or special events
 
 <Steps>
   <Step title="Navigate to Closed Dates">
-    In Rooftop Settings > Operations, scroll to the **Closed Dates** section and click **Add**.
+    In Rooftop Settings > Operations, scroll to the **Closed Dates** section and click **Edit**.
   </Step>
   <Step title="Choose a date type">
     Select either a **specific date** (using the date picker) or a **named holiday** from the dropdown.
@@ -52,7 +52,7 @@ Closed dates let you block out specific days — like holidays or special events
     - Memorial Day
   </Step>
   <Step title="Save the closed date">
-    Click **Add** or **Save** to confirm. The date now appears in your closed dates list.
+    Click **Save** to confirm. The date now appears in your closed dates list.
   </Step>
 </Steps>
 
@@ -76,6 +76,10 @@ The vehicle makes setting tells your AI agent which brands your rooftop sells an
   </Step>
 </Steps>
 
+<Note>
+  If no vehicle makes are configured, the agent treats all makes as allowed. Once you add at least one make, the agent uses your list to answer brand-specific questions accurately.
+</Note>
+
 Keep this list accurate and up to date — if your rooftop picks up a new brand franchise or drops one, update Vehicle Makes so the agent reflects the change immediately.
 
 ## Transport Options
@@ -84,7 +88,7 @@ Transport options define the ways customers can bring their vehicle in — or re
 
 <Steps>
   <Step title="Open Transport Options">
-    In Rooftop Settings > Operations, scroll to **Transport Options**.
+    In Rooftop Settings > Operations, scroll to **Transport Options** and click **Edit**.
   </Step>
   <Step title="Configure your options">
     Enable or disable each transport type to match the services your service department actually offers.
@@ -95,3 +99,7 @@ Transport options define the ways customers can bring their vehicle in — or re
 </Steps>
 
 Your AI agent uses the configured transport options when discussing service scheduling with callers, so only enable options your team can reliably fulfill.
+
+<Note>
+  Transport options are available when your scheduling integration is set to **None (Manual Callback)** or **Google Calendar**. When using a DMS-connected scheduler such as xTime or DealerFX, transport options are sourced directly from that system.
+</Note>

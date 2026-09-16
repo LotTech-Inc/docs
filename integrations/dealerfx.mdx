@@ -1,5 +1,5 @@
 ---
-title: "Connect DealerFX for Service Scheduling"
+title: "Connect DealerFX for Real-Time Service Scheduling"
 sidebarTitle: "DealerFX"
 description: "Integrate DealerFX with LotTech Voice to enable real-time appointment scheduling so your AI agent can book service slots directly from customer calls."
 ---
@@ -25,19 +25,22 @@ Without DealerFX (or another scheduling integration), the AI will still collect 
   <Step title="Go to the Operations tab">
     Select the **Operations** tab within Rooftop Settings.
   </Step>
-  <Step title="Find the DealerFX section and click Setup">
-    Locate the **DealerFX** section on the Operations page and click **Setup** to open the DealerFX configuration modal.
+  <Step title="Select DealerFX as your scheduling system">
+    In the **Service Scheduling Integration** section, open the **Appointment Scheduling System** dropdown and select **DealerFX**.
   </Step>
-  <Step title="Enter your DealerFX credentials">
-    In the Setup modal, enter the integration credentials provided by your DealerFX account manager.
+  <Step title="Click Configure">
+    A status panel appears below the dropdown. Click **Configure** to open the DealerFX setup dialog.
   </Step>
-  <Step title="Save your credentials">
-    Click **Save** to apply the configuration. The AI agent will use these credentials to authenticate with DealerFX on every scheduling request.
+  <Step title="Enter your dealer code and OEM name">
+    In the setup dialog, enter your **dealer code** and **OEM name** as provided by your DealerFX representative. The OEM name must match the brand on your DealerFX account (for example, Nissan, Ford, or Chrysler). Click **Validate** to verify both values before saving.
+  </Step>
+  <Step title="Save your configuration">
+    Once validation succeeds, click **Save Configuration** to complete the setup. The AI agent will use these credentials to look up vehicle and scheduling data in DealerFX on every call.
   </Step>
 </Steps>
 
 <Note>
-  Contact your **DealerFX account manager** to obtain the integration credentials required for this setup. LotTech support cannot provide DealerFX credentials on your behalf.
+  Contact your **DealerFX representative** to obtain your dealer code and OEM name. The dealer code is typically a short identifier like `NISANYT`, and the OEM name must exactly match the brand configured in your DealerFX account. LotTech support cannot provide DealerFX credentials on your behalf.
 </Note>
 
 ## How It Works During Calls
@@ -59,16 +62,16 @@ To remove your DealerFX integration:
   <Step title="Open Rooftop Settings → Operations">
     Navigate to **Rooftop Settings** and select the **Operations** tab.
   </Step>
-  <Step title="Open the DealerFX Setup modal">
-    Click **Setup** in the DealerFX section to open the configuration modal.
+  <Step title="Open the DealerFX setup dialog">
+    In the **Service Scheduling Integration** section, click **Configure** next to the DealerFX status.
   </Step>
-  <Step title="Remove your credentials and save">
-    Clear your credentials from the fields and click **Save** to disconnect the integration.
+  <Step title="Click Disconnect">
+    In the setup dialog, click **Disconnect** and confirm to remove the integration.
   </Step>
 </Steps>
 
 After disconnecting, the AI will revert to capturing service appointment requests as pending items in your LotTech dashboard for your team to book manually through DealerFX or another tool.
 
 <Tip>
-  **xTime** and **DealerFX** serve the same purpose in LotTech Voice — real-time service scheduling. Only one needs to be active at a time. Choose the integration that matches your dealer management system, and leave the other unconfigured. See [xTime](/integrations/xtime) if your dealership uses xTime instead.
+  **Xtime** and **DealerFX** serve the same purpose in LotTech Voice — real-time service scheduling. Only one needs to be active at a time. Choose the integration that matches your dealer management system, and leave the other unconfigured. See [xTime](/integrations/xtime) if your dealership uses Xtime instead.
 </Tip>

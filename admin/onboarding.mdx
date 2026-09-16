@@ -1,92 +1,106 @@
 ---
-title: "Onboard New Managers and Rooftops"
+title: "Admin Onboarding: Add Users, Rooftops, and PDF Import"
 sidebarTitle: "Onboarding"
-description: "Use LotTech Voice's Admin Onboarding tools to set up new dealership locations and invite new team members quickly, including PDF-based auto-setup."
+description: "Use LotTech Voice's Admin Onboarding tools to add new team members, bring dealership locations online, and import dealer setups from PDF documents."
 ---
 
-The Onboarding hub is where you go to expand your LotTech Voice platform — adding new team members, bringing new dealership locations online, and migrating existing dealer setups from your documentation. Whether you are standing up a single new rooftop or migrating a large group of locations, the tools here are designed to reduce manual data entry and get you operational as quickly as possible.
+The Onboarding hub is where you expand your LotTech Voice platform — adding new team members, bringing new dealership locations online, and importing existing dealer configurations from documents. Whether you are standing up a single new rooftop or onboarding a large group of locations, the tools here reduce manual data entry and get you operational quickly.
 
 ## Onboarding Hub
 
-Navigate to **Admin** in the left sidebar, then select **Onboarding**. The full URL is `/dashboard/admin/onboarding`. The hub presents four tools:
+Navigate to **Admin** in the left sidebar, then select **Onboarding**. The hub presents four tools:
 
 | Tool | What it does |
 |---|---|
-| **Create Manager** | Invite a new user to the platform |
-| **Create Rooftop** | Set up a new dealership location manually |
-| **Onboard from PDF** | Create a new rooftop from a dealer setup document |
-| **Update from PDF** | Update an existing rooftop's config from a revised document |
+| **Add User** | Create a new user account and assign roles |
+| **Add Rooftop** | Set up a new dealership location manually |
+| **Add from PDF** | Create a new rooftop and staff accounts from a dealer setup document |
+| **Update from PDF** | Update an existing rooftop's configuration from a revised document |
 
-## Create a New Manager
+## Add a New User
 
-Use this flow to invite a new team member to your platform.
+Use this flow to create a new team member account on your platform. The wizard walks you through three steps.
 
 <Steps>
-  <Step title="Click Create Manager">
-    Select **Create Manager** from the Onboarding hub.
+  <Step title="Personal information">
+    Select **Add User** from the Onboarding hub. Enter the new user's first name, last name, email address, and a password for their account. A phone number is optional.
   </Step>
-  <Step title="Enter user details">
-    Fill in the new user's first name, last name, and work email address.
+  <Step title="Role selection">
+    Select one or more roles for the user. You can assign any combination — for example, a team member might hold both Parts Manager and Service Manager at the same rooftop. Available roles include Administrator, Rooftop Admin, Parts Manager, Cosmetics Manager, Service Manager, Commerce Manager, Rental Manager, and Email Manager.
   </Step>
-  <Step title="Submit the form">
-    Click **Submit**. The new user receives an invitation email immediately with a link to set their password. They are created with the **Manager** role by default — you can update their role from Admin &gt; Users if needed.
+  <Step title="Rooftop assignment">
+    If you selected a role that is scoped to a rooftop (such as Parts Manager or Rental Manager), choose the rooftop this user will work in. Only rooftops with the relevant product enabled appear in the list. Platform-wide roles like Administrator do not require this step.
   </Step>
 </Steps>
 
-## Create a New Rooftop
+When the wizard completes, the user account is created immediately and the new user can sign in with the credentials you provided.
 
-Use this flow to manually set up a new dealership location from scratch.
+## Add a New Rooftop
+
+Use this flow to manually set up a new dealership location. The wizard walks you through seven steps.
 
 <Steps>
-  <Step title="Click Create Rooftop">
-    Select **Create Rooftop** from the Onboarding hub.
+  <Step title="Rooftop name">
+    Select **Add Rooftop** from the Onboarding hub. Enter the dealership's display name.
   </Step>
-  <Step title="Fill in the Rooftop Onboarding Form">
-    Enter the dealership name, full street address, primary and any secondary phone numbers, and select which modules to enable — Parts, Cosmetics, Service, and/or Rental.
+  <Step title="URL slug">
+    Enter a unique URL slug for this rooftop (lowercase letters, numbers, and hyphens only). The slug is auto-generated from the rooftop name but you can customize it.
   </Step>
-  <Step title="Submit the form">
-    Click **Submit**. The rooftop is created and available in Admin &gt; Rooftops immediately.
+  <Step title="Rooftop details">
+    Enter the rooftop's address and at least one contact method (phone number or email address). Use the address autocomplete to look up the address, then confirm it with the built-in address validation step.
   </Step>
-  <Step title="Complete setup in Rooftop Settings">
-    After creation, navigate to the rooftop's settings page to configure business hours, routing rules, module-specific options, and team assignments.
+  <Step title="Vehicle makes">
+    Select which vehicle brands this rooftop services. This step is optional — you can skip it and configure makes later.
+  </Step>
+  <Step title="Business hours">
+    Set the rooftop's operating hours. This step is optional — skip it if you want to configure hours later.
+  </Step>
+  <Step title="Closed dates">
+    Add any dates when the rooftop is closed, such as holidays. This step is optional.
+  </Step>
+  <Step title="Services">
+    Select which products to activate on this rooftop: Parts Calls, Cosmetic Calls, Service Calls, Commerce Platform, Rental Calls, and/or Email AI. At least one must be selected to complete the wizard.
   </Step>
 </Steps>
 
-## Onboard from PDF
+After the wizard completes, the rooftop appears in Admin > Rooftops immediately. Navigate to the rooftop's settings page to configure phone numbers, business hours, routing rules, and other module-specific options.
 
-If you have a standard dealer setup document, you can skip most of the manual form-filling by uploading it directly. The AI parser reads the document and automatically populates the rooftop configuration for your review.
+<Note>
+  Creating a rooftop does not automatically assign it a phone number. Configure voice and SMS phone numbers from the rooftop's settings page after creation.
+</Note>
+
+## Add from PDF
+
+If you have a completed dealer setup document, you can create both a new rooftop and staff user accounts in a single workflow by uploading it directly. The parser reads the document and populates the configuration for your review before anything is created.
 
 <Steps>
-  <Step title="Click Onboard from PDF">
-    Select **Onboard from PDF** from the Onboarding hub.
+  <Step title="Upload your document">
+    Select **Add from PDF** from the Onboarding hub. Choose the PDF file from your device. The parser accepts standard dealer onboarding and facility documents.
   </Step>
-  <Step title="Upload your dealer setup document">
-    Choose the PDF file from your device. The parser accepts standard dealer onboarding and facility documents.
+  <Step title="Review the rooftop">
+    LotTech Voice displays the rooftop information extracted from the document — name, slug, address, contact details, and detected products. Review each field and correct anything that was misread or needs adjustment.
   </Step>
-  <Step title="Review the parsed data">
-    LotTech Voice displays the information it extracted from the document — dealership name, address, contact details, and detected services. Review each field and correct anything that was misread.
+  <Step title="Review the staff accounts">
+    Review the staff user records parsed from the document. You can edit names, emails, phone numbers, and role assignments, and choose which users to include.
   </Step>
-  <Step title="Confirm to create the rooftop">
-    Click **Confirm** to create the rooftop with the reviewed data. You can continue refining the configuration in Rooftop Settings afterward.
+  <Step title="Set a password and confirm">
+    Enter a shared initial password for all staff accounts being created, then click **Create rooftop + users** to commit. The rooftop and all included user accounts are created in one operation.
   </Step>
 </Steps>
 
 <Info>
-  The PDF parser is designed to work with standard dealer setup and facility documents. It extracts dealership name, address, contact information, and available services automatically. Complex or non-standard document layouts may require more manual corrections in the review step.
+  The PDF parser is designed to work with standard dealer setup and facility documents. It extracts dealership name, address, contact information, available products, and staff details automatically. Complex or non-standard document layouts may require more manual corrections in the review steps.
 </Info>
 
 ## Update from PDF
 
-Use this flow when a rooftop's configuration has changed and you have an updated dealer document to reflect those changes — such as new phone numbers, updated hours, or added service lines.
+Use this flow when a rooftop's configuration has changed and you have an updated dealer document — such as new phone numbers, updated hours, or added service lines.
 
 <Steps>
-  <Step title="Click Update from PDF">
+  <Step title="Select Update from PDF">
     Select **Update from PDF** from the Onboarding hub.
   </Step>
-  <Step title="Select the rooftop to update">
-    Choose the existing rooftop you want to apply the update to from the dropdown list.
-  </Step>
-  <Step title="Upload the updated PDF">
+  <Step title="Upload the updated document">
     Upload the revised dealer setup document.
   </Step>
   <Step title="Review the proposed changes">
@@ -98,5 +112,5 @@ Use this flow when a rooftop's configuration has changed and you have an updated
 </Steps>
 
 <Tip>
-  When migrating multiple dealership locations at once, use the **Onboard from PDF** flow for each location rather than filling out forms manually. Even if the parsed data needs some corrections, it is significantly faster than entering every field by hand — especially for large dealer groups with many locations.
+  When onboarding multiple dealership locations, use **Add from PDF** for each location rather than filling out the wizard manually. Even if the parsed data needs some corrections, it is significantly faster than entering every field by hand — especially for large dealer groups.
 </Tip>

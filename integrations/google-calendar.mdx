@@ -25,23 +25,27 @@ Without this integration, the AI can still collect appointment requests, but tho
   <Step title="Go to the Operations tab">
     Select the **Operations** tab within Rooftop Settings.
   </Step>
-  <Step title="Find the Google Calendar section">
-    Scroll to the **Google Calendar** section on the Operations page.
+  <Step title="Select Google Calendar as your scheduling system">
+    In the **Service Scheduling Integration** section, open the **Appointment Scheduling System** dropdown and select **Google Calendar**.
   </Step>
-  <Step title="Click Connect Google Calendar">
-    Click the **Connect Google Calendar** button to begin the OAuth authorization flow.
+  <Step title="Click Set Up Calendar">
+    A status panel appears below the dropdown. Click **Set Up Calendar** to open the Google Calendar setup dialog.
   </Step>
-  <Step title="Authorize with your Google account">
-    Sign in with the Google account that owns or has write access to the calendar you want to use. Grant the requested permissions when prompted.
+  <Step title="Connect with your Google account">
+    Click **Connect with Google**. A popup window will open for authorization. Sign in with the Google account that owns or has write access to the calendar you want to use, and grant the requested permissions.
   </Step>
   <Step title="Select a calendar">
-    Choose the specific calendar you want the AI agent to use for reading availability and creating appointment events.
+    After authorization succeeds, choose the specific calendar you want the AI agent to use for reading availability and creating appointment events, then click **Save & Continue**.
   </Step>
 </Steps>
 
 <Note>
   You must authorize with a Google account that has **write access** to the target calendar. A read-only account will connect successfully but the AI will not be able to create appointment events during calls.
 </Note>
+
+<Warning>
+  A popup window opens during authorization. If your browser blocks popups, allow popups for LotTech Voice and try again.
+</Warning>
 
 ## How Appointments Are Created
 
@@ -62,8 +66,11 @@ If you need to remove the Google Calendar integration from your rooftop:
   <Step title="Open Rooftop Settings → Operations">
     Navigate to **Rooftop Settings** and select the **Operations** tab.
   </Step>
+  <Step title="Open the Google Calendar setup dialog">
+    In the **Service Scheduling Integration** section, click **Configure** next to the Google Calendar status.
+  </Step>
   <Step title="Click Disconnect">
-    In the Google Calendar section, click **Disconnect** to remove the integration.
+    In the setup dialog, click **Disconnect** and confirm to remove the integration.
   </Step>
 </Steps>
 

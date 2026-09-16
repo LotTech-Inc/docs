@@ -1,10 +1,10 @@
 ---
-title: "Browse and Search Customer Profiles"
+title: "Browse, Search, and Filter Your Customer Directory"
 sidebarTitle: "Customers"
 description: "Customer profiles in LotTech Voice are automatically built from caller interactions. Search, filter, and view each contact's full history."
 ---
 
-LotTech Voice builds a customer record automatically every time your AI agent handles a new caller. No manual data entry, no CRM import required. The Customers section gives you a searchable, filterable directory of every contact your dealership has spoken with, complete with their full interaction history and any open requests.
+LotTech Voice builds a customer record automatically every time your AI agent handles a new caller. No manual data entry, no CRM import required. The Customers section gives you a searchable, sortable directory of every contact your dealership has spoken with, complete with their full interaction history and any open requests.
 
 ## How Customers Are Created
 
@@ -18,29 +18,37 @@ Subsequent calls from the same number are linked to the existing record, so each
 
 ## Browsing Customers
 
-Navigate to **Customers** in the left sidebar to open the full customer directory. The list is paginated at **25 customers per page** and shows the following columns at a glance:
+Navigate to **Customers** in the left sidebar to open the full customer directory. The list is paginated at **25 customers per page** and shows the following at a glance:
 
 | Column | Description |
 |---|---|
 | **Name** | The customer's name as captured by the AI agent. |
 | **Phone** | The caller's phone number. |
 | **Pending Requests** | Number of open requests currently associated with this customer. |
-| **Last Interaction** | Timestamp of the most recent contact event. |
+| **Last Contact** | How recently this customer last had an interaction. |
 
-## Searching and Filtering
+## Tabs: Customers and Unknown
 
-Use the search bar at the top of the Customers page to find a specific contact by **name** or **phone number**. Results update as you type.
-
-Below the search bar, three filter tabs let you segment your list:
+Two tabs at the top of the Customers page segment your list:
 
 | Tab | Shows |
 |---|---|
-| **All Customers** | Every contact record for your rooftop. |
-| **Recent** | Customers who have had an interaction within the last 30 days. |
-| **Frequent** | Customers with the highest number of total interactions. |
+| **Customers** | Contacts where the AI captured a name during at least one interaction. |
+| **Unknown** | Callers whose name was never identified — phone number only. |
+
+Use the **Unknown** tab to identify repeat callers you haven't yet captured a name for, so you can prioritize outreach or follow-up with them.
+
+## Searching and Sorting
+
+Use the search bar at the top of the Customers page to find a specific contact by **name** or **phone number**. Results update as you type.
+
+Two sort buttons let you control the list order:
+
+- **Recent activity** — sorts by the most recent interaction date (default)
+- **A–Z** — sorts alphabetically by customer name
 
 <Tip>
-  Use the **Frequent** filter before service campaigns or follow-up pushes — it surfaces your most engaged callers first.
+  Switch to **A–Z** when you're looking up a specific customer by name. Use **Recent activity** for your day-to-day view to see who's called most recently.
 </Tip>
 
 ## Customer Profile
@@ -55,10 +63,10 @@ Click any customer in the list to open their full profile. The profile page brin
     A count of open requests associated with this customer, with links to each one.
   </Card>
   <Card title="Interaction History" icon="timeline">
-    A chronological list of every call and SMS tied to this customer. Click any interaction to open its detail page.
+    A chronological list of every voice call and SMS tied to this customer. Click any interaction to open its detail page.
   </Card>
-  <Card title="Quick Actions" icon="bolt">
-    Jump directly to creating a new request or reviewing the latest interaction from the profile header.
+  <Card title="Total Interactions" icon="chart-bar">
+    A running count of all contact events linked to this customer across their history.
   </Card>
 </CardGroup>
 
