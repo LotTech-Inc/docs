@@ -1,0 +1,108 @@
+---
+title: "Connect Stripe for Payment Processing"
+sidebarTitle: "Stripe Setup"
+description: "Connect your Stripe account to LotTech Voice to accept payments on your customer-facing parts storefront and track revenue in the Orders module."
+---
+
+Connecting Stripe to LotTech Voice enables your customer-facing parts storefront to accept payments online and routes revenue data into the Orders module for tracking. The setup process guides you through Stripe's own onboarding flow and takes only a few minutes to complete.
+
+## Prerequisites
+
+Before connecting Stripe, confirm the following:
+
+- You have a **Stripe account**, or you're prepared to create one during the onboarding flow. Stripe accounts are free to create at [stripe.com](https://stripe.com).
+- The **Commerce module** is enabled on your rooftop. If you don't see the Commerce tab in Rooftop Settings, contact your LotTech administrator.
+- You have **manager-level access** in LotTech Voice. The Stripe setup section is only available to users with the manager role.
+
+## Connecting Stripe
+
+<Steps>
+  <Step title="Open Rooftop Settings">
+    Click your rooftop name or the settings icon to open **Rooftop Settings**, then navigate to the **Commerce** tab.
+  </Step>
+  <Step title="Start the connection">
+    Click **Connect Stripe** in the Stripe section.
+  </Step>
+  <Step title="Complete Stripe's onboarding">
+    You'll be redirected to Stripe to set up or link your account. Follow all prompts — including business details, bank account information, and identity verification.
+  </Step>
+  <Step title="Return to LotTech Voice">
+    After completing Stripe's onboarding, you'll be redirected back to LotTech Voice. Your Stripe status updates automatically.
+  </Step>
+</Steps>
+
+<Note>
+  If you leave Stripe's onboarding before completing all steps, your status will show as **Pending**. Return to **Rooftop Settings → Commerce → Stripe** and click **Continue Onboarding** to pick up where you left off.
+</Note>
+
+## Stripe Account Status
+
+Check the Stripe section of the Commerce tab at any time to see your current connection status.
+
+| Status | Meaning |
+|---|---|
+| **Not Connected** | No Stripe account has been linked to this rooftop. |
+| **Pending** | Stripe onboarding has been started but not fully completed. Charges are not yet enabled. |
+| **Active** | Onboarding is complete and charges are enabled. Your storefront can accept payments. |
+
+Payments will only process when the status is **Active**.
+
+## Tax Setup
+
+After your Stripe account is **Active**, configure your tax settings directly in Stripe (via your Stripe dashboard), then return to LotTech Voice to confirm the configuration.
+
+<Steps>
+  <Step title="Configure taxes in Stripe">
+    In your Stripe dashboard, set up the appropriate tax rates and collection rules for your location and products.
+  </Step>
+  <Step title="Confirm in LotTech Voice">
+    Back in **Rooftop Settings → Commerce**, click **Confirm Tax Setup** once your Stripe tax settings are correct. This tells LotTech Voice that tax collection is ready.
+  </Step>
+</Steps>
+
+## Storefront Appearance
+
+You can customize how your customer-facing parts storefront looks with your dealership's branding. These settings live in the **Overview** tab of Rooftop Settings.
+
+- **Brand colors** — set a primary, secondary, and tertiary color to match your dealership's palette
+- **Logo** — upload your dealership logo to display at the top of the storefront
+- **Live preview** — a preview panel updates in real time as you make changes, so you can see exactly how the storefront will appear to customers before saving
+
+## GA4 Analytics
+
+Optionally connect Google Analytics 4 to track storefront activity such as page views, product views, and purchases.
+
+<Steps>
+  <Step title="Find your Measurement ID">
+    In your Google Analytics 4 property, go to **Admin → Data Streams** and copy the **Measurement ID** (formatted as `G-XXXXXXXXXX`).
+  </Step>
+  <Step title="Enter the Measurement ID">
+    In **Rooftop Settings → Commerce**, paste your Measurement ID into the **GA4 Measurement ID** field and save.
+  </Step>
+</Steps>
+
+Once connected, storefront events will appear in your GA4 property within 24–48 hours.
+
+## Embed Configuration
+
+If you're embedding the parts storefront directly on your dealership's website, configure the allowed domains to ensure the embed loads correctly and securely.
+
+<Steps>
+  <Step title="Open Embed Config">
+    In **Rooftop Settings → Commerce**, locate the **Embed Config** section.
+  </Step>
+  <Step title="Add your domain(s)">
+    Enter each domain that will host the embedded storefront (for example, `www.yourdealer.com`). Add one domain per line.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The storefront embed will now load on the specified domains.
+  </Step>
+</Steps>
+
+## Disconnecting Stripe
+
+If you need to unlink your Stripe account, click **Disconnect Stripe** in the Stripe section of the Commerce tab and confirm.
+
+<Warning>
+  Disconnecting Stripe immediately disables payment processing on your storefront. Customers will not be able to complete purchases until a Stripe account is reconnected. Ensure all outstanding orders are fulfilled or otherwise resolved before disconnecting.
+</Warning>

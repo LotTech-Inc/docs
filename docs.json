@@ -1,72 +1,111 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "LotTech Voice",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ef7025",
+    "light": "#eec9bc",
+    "dark": "#4fa1ab"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Account & Access",
+            "pages": [
+              "account/sign-up",
+              "account/roles-and-permissions",
+              "account/profile-settings"
+            ]
+          },
+          {
+            "group": "Rooftop Setup",
+            "pages": [
+              "rooftop/overview",
+              "rooftop/configure-voice",
+              "rooftop/business-hours",
+              "rooftop/team-management"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Using the Dashboard",
+        "groups": [
+          {
+            "group": "Communications",
+            "pages": [
+              "communications/interactions",
+              "communications/requests",
+              "communications/customers",
+              "communications/call-logs"
+            ]
+          },
+          {
+            "group": "Commerce & Inventory",
+            "pages": [
+              "commerce/orders",
+              "commerce/inventory",
+              "commerce/rental-inventory",
+              "commerce/custom-pricing",
+              "commerce/stripe-setup"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "analytics/overview",
+              "analytics/interaction-metrics",
+              "analytics/request-metrics"
+            ]
+          },
+          {
+            "group": "Admin Tools",
+            "pages": [
+              "admin/manage-users",
+              "admin/manage-rooftops",
+              "admin/onboarding"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Voice & Telephony",
+            "pages": [
+              "integrations/voice-agent",
+              "integrations/twilio-phone-numbers"
+            ]
+          },
+          {
+            "group": "Third-Party",
+            "pages": [
+              "integrations/google-calendar",
+              "integrations/stripe",
+              "integrations/xtime",
+              "integrations/dealerfx"
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/LotTech-Inc/lottech-voice-frontend"
     }
   }
 }

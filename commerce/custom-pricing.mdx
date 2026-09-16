@@ -1,0 +1,58 @@
+---
+title: "Set Up Custom Pricing for Customers"
+sidebarTitle: "Custom Pricing"
+description: "Create special price rules in LotTech Voice for specific customers or wholesale buyers, overriding standard inventory prices."
+---
+
+Custom Pricing lets you offer different prices to specific customers or organizations — such as fleet account holders, wholesale buyers, or preferred service clients — without altering the standard prices in your inventory. Rules are applied automatically on the customer-facing storefront when a matched customer places an order.
+
+<Note>
+  Custom Pricing requires the `commerce` module permission on your rooftop. Contact your LotTech administrator if this option is not visible in your sidebar.
+</Note>
+
+## What Is Custom Pricing?
+
+Standard inventory prices apply to all customers by default. Custom Pricing gives you the flexibility to create exceptions — assigning a specific price for a particular item to a specific customer or organization. This is useful for:
+
+- **Fleet accounts** that negotiate fixed per-unit pricing on frequently ordered parts
+- **Wholesale buyers** who receive volume-based or margin-adjusted rates
+- **Preferred service customers** with contractual pricing agreements
+
+Custom pricing rules override the standard item price only for the matched customer. All other customers continue to see and pay the default price.
+
+## Accessing Custom Pricing
+
+Navigate to **Custom Pricing** in the left sidebar to open the pricing rules page. The `commerce` module permission is required to view and manage this section.
+
+## Creating a Pricing Rule
+
+<Steps>
+  <Step title="Open the new rule form">
+    Click **Add Pricing Rule** on the Custom Pricing page.
+  </Step>
+  <Step title="Select the customer or organization">
+    Search for and select the customer account or organization this rule applies to.
+  </Step>
+  <Step title="Choose the item">
+    Search your inventory and select the specific part or retail item this price applies to.
+  </Step>
+  <Step title="Set the custom price">
+    Enter the custom price for this customer–item combination. This price will replace the standard inventory price for that customer at checkout.
+  </Step>
+  <Step title="Save the rule">
+    Click **Save**. The rule is active immediately and will apply the next time the matched customer views or purchases that item on the storefront.
+  </Step>
+</Steps>
+
+## Managing Rules
+
+All active pricing rules are listed on the Custom Pricing page. From here you can:
+
+- **Edit a rule** — click the rule row to modify the customer, item, or price
+- **Delete a rule** — click the delete icon on a rule row and confirm. The item reverts to standard pricing for that customer immediately.
+
+Review your pricing rules periodically to ensure custom rates are still accurate and aligned with your current agreements.
+
+<Note>
+  Custom pricing rules only take effect on the customer-facing storefront. When you view order details in the LotTech Voice dashboard, you will always see the actual price the customer was charged — which may differ from the standard inventory price when a custom rule applied.
+</Note>

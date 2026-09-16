@@ -1,0 +1,75 @@
+---
+title: "Browse and Search Customer Profiles"
+sidebarTitle: "Customers"
+description: "Customer profiles in LotTech Voice are automatically built from caller interactions. Search, filter, and view each contact's full history."
+---
+
+LotTech Voice builds a customer record automatically every time your AI agent handles a new caller. No manual data entry, no CRM import required. The Customers section gives you a searchable, filterable directory of every contact your dealership has spoken with, complete with their full interaction history and any open requests.
+
+## How Customers Are Created
+
+A customer record is created the first time your AI voice agent receives an inbound call from an unknown phone number. The system captures the caller's number and any identifying information gathered during the conversation — typically a name — and creates a profile automatically.
+
+Subsequent calls from the same number are linked to the existing record, so each customer's history accumulates over time without any manual effort from your team.
+
+<Info>
+  Customer data is scoped to the **rooftop**. If the same phone number calls two different rooftops in your group, two separate customer records are created — one per rooftop. Records are not shared across locations.
+</Info>
+
+## Browsing Customers
+
+Navigate to **Customers** in the left sidebar to open the full customer directory. The list is paginated at **25 customers per page** and shows the following columns at a glance:
+
+| Column | Description |
+|---|---|
+| **Name** | The customer's name as captured by the AI agent. |
+| **Phone** | The caller's phone number. |
+| **Pending Requests** | Number of open requests currently associated with this customer. |
+| **Last Interaction** | Timestamp of the most recent contact event. |
+
+## Searching and Filtering
+
+Use the search bar at the top of the Customers page to find a specific contact by **name** or **phone number**. Results update as you type.
+
+Below the search bar, three filter tabs let you segment your list:
+
+| Tab | Shows |
+|---|---|
+| **All Customers** | Every contact record for your rooftop. |
+| **Recent** | Customers who have had an interaction within the last 30 days. |
+| **Frequent** | Customers with the highest number of total interactions. |
+
+<Tip>
+  Use the **Frequent** filter before service campaigns or follow-up pushes — it surfaces your most engaged callers first.
+</Tip>
+
+## Customer Profile
+
+Click any customer in the list to open their full profile. The profile page brings together everything LotTech Voice knows about that contact:
+
+<CardGroup cols={2}>
+  <Card title="Contact Info" icon="address-card">
+    The customer's name and phone number as captured across their interactions.
+  </Card>
+  <Card title="Pending Requests" icon="clock">
+    A count of open requests associated with this customer, with links to each one.
+  </Card>
+  <Card title="Interaction History" icon="timeline">
+    A chronological list of every call and SMS tied to this customer. Click any interaction to open its detail page.
+  </Card>
+  <Card title="Quick Actions" icon="bolt">
+    Jump directly to creating a new request or reviewing the latest interaction from the profile header.
+  </Card>
+</CardGroup>
+
+From the interaction history list on the profile page, you can click into any past call to review its transcript, actions taken, and comments — without navigating back to the Activity page.
+
+## Organizations (B2B)
+
+If your rooftop has the **Parts module** enabled, wholesale and B2B buyers are managed as **Organizations** rather than individual customer records. Organizations group contacts under a business account and support parts-specific workflows like wholesale pricing and purchase history.
+
+Navigate to **Organizations** in the left sidebar to access this section. The Organizations view is only visible to rooftops with the Parts module active.
+
+<Note>
+  If you don't see **Organizations** in your sidebar, your rooftop does not have the Parts module enabled. Contact your LotTech administrator to discuss enabling it.
+</Note>

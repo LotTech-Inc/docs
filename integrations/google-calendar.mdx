@@ -1,0 +1,78 @@
+---
+title: "Connect Google Calendar for Appointment Scheduling"
+sidebarTitle: "Google Calendar"
+description: "Link your Google Calendar to LotTech Voice so your AI agent can check availability and schedule service appointments directly during calls."
+---
+
+Connecting Google Calendar to LotTech Voice gives your AI agent live access to your dealership's appointment schedule. During a call, the AI can check open time slots and create a calendar event on the spot — no manual follow-up required and no double-booking risk.
+
+## What This Integration Does
+
+When Google Calendar is connected, your AI voice agent can:
+
+- **Check availability** in real time by reading your calendar's open time slots during a call
+- **Create appointment events** automatically when a caller books a service visit, capturing their name, phone number, and service type in the event details
+- **Prevent scheduling conflicts** by only offering times that are actually open on your calendar
+
+Without this integration, the AI can still collect appointment requests, but those requests will sit as pending items for your team to manually book.
+
+## Connecting Google Calendar
+
+<Steps>
+  <Step title="Open Rooftop Settings">
+    Navigate to **Rooftop Settings** from the main navigation menu.
+  </Step>
+  <Step title="Go to the Operations tab">
+    Select the **Operations** tab within Rooftop Settings.
+  </Step>
+  <Step title="Find the Google Calendar section">
+    Scroll to the **Google Calendar** section on the Operations page.
+  </Step>
+  <Step title="Click Connect Google Calendar">
+    Click the **Connect Google Calendar** button to begin the OAuth authorization flow.
+  </Step>
+  <Step title="Authorize with your Google account">
+    Sign in with the Google account that owns or has write access to the calendar you want to use. Grant the requested permissions when prompted.
+  </Step>
+  <Step title="Select a calendar">
+    Choose the specific calendar you want the AI agent to use for reading availability and creating appointment events.
+  </Step>
+</Steps>
+
+<Note>
+  You must authorize with a Google account that has **write access** to the target calendar. A read-only account will connect successfully but the AI will not be able to create appointment events during calls.
+</Note>
+
+## How Appointments Are Created
+
+When a caller books a service appointment during a call, the AI agent creates a calendar event automatically. Each event includes:
+
+- **Caller name** as provided during the call
+- **Caller phone number** for easy callback
+- **Service type** based on the caller's stated need (for example, oil change, tire rotation, or diagnostic)
+- **Appointment date and time** confirmed with the caller during the call
+
+The event appears in your Google Calendar immediately after the call ends, and any team members with access to that calendar can see and manage it.
+
+## Disconnecting
+
+If you need to remove the Google Calendar integration from your rooftop:
+
+<Steps>
+  <Step title="Open Rooftop Settings → Operations">
+    Navigate to **Rooftop Settings** and select the **Operations** tab.
+  </Step>
+  <Step title="Click Disconnect">
+    In the Google Calendar section, click **Disconnect** to remove the integration.
+  </Step>
+</Steps>
+
+Disconnecting does not delete or modify any existing calendar events that were previously created by the AI agent.
+
+<Warning>
+  After disconnecting Google Calendar, the AI agent can no longer check availability or book appointments in real time. It will still capture appointment requests from callers, but those requests will be saved as pending items in your LotTech dashboard for your team to book manually.
+</Warning>
+
+<Tip>
+  Use a dedicated **service appointments calendar** rather than a personal or shared team calendar. Keeping appointment events in their own calendar makes it easier to manage availability, share access with service advisors, and avoid clutter from personal events.
+</Tip>

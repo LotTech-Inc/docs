@@ -1,0 +1,78 @@
+---
+title: "Creating Your LotTech Voice Account"
+sidebarTitle: "Sign Up"
+description: "LotTech Voice accounts are created by your administrator. Learn how to accept your invitation, verify your email, and log in for the first time."
+---
+
+LotTech Voice accounts are provisioned by your LotTech administrator or dealership administrator — there is no public self-registration page. Once your administrator adds you to the platform, you will receive an email invitation with everything you need to get started.
+
+<Warning>
+  Your account is tied exclusively to your dealership's LotTech Voice instance. Never share your login credentials with anyone, including colleagues. Each team member should have their own account.
+</Warning>
+
+## Accepting Your Invitation
+
+When your administrator creates your account, you will receive an invitation email at the address they registered for you. Follow these steps to activate your account.
+
+<Steps>
+  <Step title="Open your invitation email">
+    Check your inbox for an email from LotTech Voice. The subject line will indicate that you have been invited to join your dealership's platform.
+  </Step>
+  <Step title="Set your password">
+    Click the link inside the invitation email. You will be taken to a secure page where you can create a password for your account. Choose a strong password of at least 8 characters.
+  </Step>
+  <Step title="Verify your email address">
+    After setting your password, LotTech Voice will send a verification email to your address. Open that email and click the verification link to confirm your account.
+  </Step>
+  <Step title="Log in for the first time">
+    Once your email is verified, navigate to your dealership's LotTech Voice URL and sign in with your email address and the password you just created.
+  </Step>
+</Steps>
+
+<Note>
+  If you do not receive a verification email within a few minutes, check your spam or junk folder. If it still does not appear, contact your administrator to resend the verification or confirm that the correct email address was used.
+</Note>
+
+## Logging In
+
+After your account is activated, you can log in at any time from your dealership's LotTech Voice login page at `/auth/login`.
+
+<Steps>
+  <Step title="Navigate to the login page">
+    Go to your dealership's LotTech Voice URL. You will be directed to the login screen automatically if you are not already signed in.
+  </Step>
+  <Step title="Enter your credentials">
+    Type your email address and password into the provided fields, then click **Sign In**.
+  </Step>
+  <Step title="Access your dashboard">
+    Upon successful login, you will land on your home screen. Admins are taken to the cross-rooftop Admin Home, while Managers are taken to their assigned rooftop dashboard.
+  </Step>
+</Steps>
+
+If you have forgotten your password, click the **Forgot Password?** link on the login page to begin the reset process.
+
+## Forgot Your Password
+
+If you cannot remember your password, you can request a reset link at any time from the login page.
+
+<Steps>
+  <Step title="Go to the Forgot Password page">
+    On the login page at `/auth/login`, click the **Forgot Password?** link. You will be taken to the password reset request page at `/auth/forgot-password`.
+  </Step>
+  <Step title="Enter your email address">
+    Type the email address associated with your LotTech Voice account and click **Send Reset Link**.
+  </Step>
+  <Step title="Open the reset email">
+    Check your inbox for a password reset email from LotTech Voice. Click the link inside to open the reset form.
+  </Step>
+  <Step title="Set a new password">
+    Enter and confirm your new password — it must be at least 8 characters long. Click **Save** to update your credentials.
+  </Step>
+  <Step title="Sign in with your new password">
+    Return to the login page and sign in using your email address and your newly created password.
+  </Step>
+</Steps>
+
+<Note>
+  Password reset links expire after a short period for security reasons. If your link has expired, simply return to `/auth/forgot-password` and request a new one.
+</Note>

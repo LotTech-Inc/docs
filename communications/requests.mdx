@@ -1,0 +1,119 @@
+---
+title: "Track and Fulfill Customer Requests"
+sidebarTitle: "Requests"
+description: "Requests are tasks created by your AI voice agent during calls. Manage, assign, and fulfill them from the Requests page in LotTech Voice."
+---
+
+Every time your AI voice agent handles a call, it automatically creates **requests** for any tasks that need your team's follow-up — a quote, a parts check, a scheduled appointment. The Requests page gives you a single place to track, assign, and close out every open task so nothing gets missed between your AI agent and your service team.
+
+## What Is a Request?
+
+A request is a task the AI voice agent opened on behalf of a customer during an interaction. Requests capture what the customer asked for and route that task to the right person on your team.
+
+Each request belongs to one of five types:
+
+<CardGroup cols={3}>
+  <Card title="Service" icon="wrench">
+    Repair, maintenance, or diagnostic work — the most common request type.
+  </Card>
+  <Card title="Parts" icon="gears">
+    A parts inquiry, availability check, or order.
+  </Card>
+  <Card title="Cosmetics" icon="paint-roller">
+    Body work, detailing, paint, or appearance-related jobs.
+  </Card>
+  <Card title="Rental" icon="car">
+    Loaner or rental vehicle requests tied to a service visit.
+  </Card>
+  <Card title="General" icon="circle-info">
+    Anything that doesn't fit the above categories — directions, hours, pricing questions, etc.
+  </Card>
+</CardGroup>
+
+## Requests Dashboard
+
+Navigate to **Requests** in the left sidebar to open the full requests list. At the top of the page, a stats strip gives you an instant snapshot of your workload:
+
+| Stat | What it shows |
+|---|---|
+| **Total** | All requests across every status |
+| **Pending** | Open tasks that still need action |
+| **Fulfilled** | Completed requests |
+| **Cancelled** | Requests the customer withdrew or your team cancelled |
+
+## Request Statuses
+
+Every request moves through a defined lifecycle. Use the status to communicate where each task stands:
+
+| Status | Meaning | Typical next action |
+|---|---|---|
+| `pending` | The request is open and waiting for your team to act on it. | Assign to a team member and begin follow-up. |
+| `fulfilled` | Your team completed the request. | No action needed — archive for reference. |
+| `cancelled` | The customer cancelled, or your team withdrew the request. | Log a reason in the notes if helpful. |
+| `denied` | The request cannot be fulfilled (part unavailable, policy, etc.). | Notify the customer and document why. |
+
+## Filtering Requests
+
+Use the filter controls at the top of the Requests list to zero in on what matters right now:
+
+- **Status** — pending, fulfilled, cancelled, or denied
+- **Type** — service, parts, cosmetics, rental, or general
+- **Date range** — limit results to a specific time window
+- **Assigned user** — see only requests belonging to a team member
+- **Search** — type a customer name, phone number, or keyword to find a specific request
+
+Filters can be combined. For example, filter by `pending` + `parts` + the current week to see all open parts requests created this week.
+
+## Viewing Request Details
+
+Click any request in the list to open its detail page. You'll see:
+
+- **Request type and status**
+- **Customer name and phone number**
+- **Rooftop** the request belongs to
+- **Assigned team member**
+- **Creation timestamp**
+- **Request notes** — what the AI captured from the conversation
+- **Associated interaction** — a link back to the original call or SMS
+
+## Fulfilling a Request
+
+When your team completes a request, mark it fulfilled directly from the detail page.
+
+<Steps>
+  <Step title="Open the request">
+    Click the request from the Requests list or from the Needs Attention card on your dashboard.
+  </Step>
+  <Step title="Review the details">
+    Confirm the customer, type, and notes match the work completed.
+  </Step>
+  <Step title="Update the status">
+    Select **Fulfilled** from the status dropdown (or **Cancelled** / **Denied** as appropriate).
+  </Step>
+  <Step title="Add notes (optional)">
+    Enter any relevant follow-up notes — part number ordered, appointment time confirmed, etc.
+  </Step>
+  <Step title="Save">
+    Click **Save** to commit the status change. The request will move out of your pending queue.
+  </Step>
+</Steps>
+
+## Assigning Requests
+
+Assigning a request to a specific team member routes ownership clearly and ensures the right person is responsible for follow-up.
+
+From the request detail page, click the **Assigned To** field and select a team member from the dropdown. The assignee will appear in the list view and in any filtered views for that user.
+
+<Tip>
+  Use assignment together with the **Assigned User** filter to run a daily standup view — filter by your name to see everything currently in your queue.
+</Tip>
+
+## Attention Queue
+
+The home dashboard surfaces the **5 oldest pending requests** in the **Needs Attention** card. These are sorted oldest-first so the most overdue tasks rise to the top.
+
+Use the Needs Attention card as your starting point each shift — clear those five before digging into the full Requests list.
+
+<Note>
+  **Bulk delete** is available to users with the Admin role. From the Requests list, select multiple requests using the checkboxes and choose **Delete Selected** from the bulk actions menu. Use this to remove test records or clean up cancelled requests.
+</Note>

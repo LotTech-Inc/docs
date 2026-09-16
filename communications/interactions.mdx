@@ -1,0 +1,103 @@
+---
+title: "View and Manage Call Interactions"
+sidebarTitle: "Interactions"
+description: "Every AI-handled call and SMS is logged as an interaction in LotTech Voice. Review transcripts, actions taken, and requests created from each contact."
+---
+
+Every time your AI voice agent connects with a customer — whether by phone or text — LotTech Voice captures the full event as an **interaction**. From a single interaction detail page you can review the transcript, see what actions the agent took, check which requests were created, and leave notes for your team. Nothing falls through the cracks.
+
+## What Is an Interaction?
+
+An interaction is a recorded contact event between your AI voice agent (or a live agent) and a customer. Each interaction captures everything relevant to that touchpoint:
+
+- **Channel** — `phone` (voice call) or `sms` (text message)
+- **Direction** — inbound (customer reached out) or outbound (your team or AI initiated contact)
+- **Status** — the outcome of the contact event
+- **Duration** — total call length (voice calls only)
+- **Caller identity** — customer name and phone number
+- **Requests created** — tasks the AI agent opened during the interaction
+- **Actions taken** — e.g., appointment booked, parts order submitted
+- **Transfer status** — whether the call was escalated to a human agent
+
+## Browsing Interactions
+
+Your full interaction history lives under **Activity** in the left sidebar. Navigate there to see a chronological list of all inbound and outbound contacts across phone and SMS channels.
+
+<Tip>
+  A **Recent Activity** strip on your home dashboard also surfaces the latest interactions at a glance — no need to navigate away for a quick check.
+</Tip>
+
+You can also reach a customer's interactions directly from their profile: go to **Dashboard → Customers**, select a customer, and open the **Interactions** tab on their profile page.
+
+## Interaction Details
+
+Click any interaction in the list to open its detail page. Here you'll find everything captured during that contact event:
+
+<CardGroup cols={2}>
+  <Card title="Call Metadata" icon="phone">
+    Channel, direction, start time, and total duration for the interaction.
+  </Card>
+  <Card title="Caller Identity" icon="user-check">
+    Customer name and phone number, plus a caller ID trust badge (see below).
+  </Card>
+  <Card title="Transcript" icon="message-lines">
+    Full conversation view for voice calls — every turn between the caller and the AI agent.
+  </Card>
+  <Card title="Actions Taken" icon="bolt">
+    A list of actions the AI completed during the call, such as booking an appointment or checking parts availability.
+  </Card>
+  <Card title="Requests Created" icon="list-check">
+    Every request the AI agent opened during this interaction, linked directly to the Requests page.
+  </Card>
+  <Card title="Transfer Info" icon="arrow-right-arrow-left">
+    If the call was transferred to a human agent, the transfer status and destination are shown here.
+  </Card>
+</CardGroup>
+
+## Caller ID Trust
+
+LotTech Voice uses **STIR/SHAKEN** caller ID verification to help you identify whether an inbound call is legitimate. Each interaction displays a trust badge next to the caller's number based on the verification result:
+
+| Badge | Meaning |
+|---|---|
+| **Verified** | The carrier confirmed the caller ID matches the originating number. |
+| **Unverified** | The call could not be verified — treat with caution. |
+| **Spoofed / Spam Risk** | Verification failed or the number exhibits spoofing signals. |
+
+<Warning>
+  An "Unverified" badge doesn't always mean the caller is malicious — some carriers don't support STIR/SHAKEN. Use it as one signal alongside context from the transcript.
+</Warning>
+
+Use the trust badge to prioritize follow-up on suspicious contacts and to protect your team from acting on spoofed inbound calls.
+
+## Adding Comments
+
+Your team can attach internal notes to any interaction directly from the detail page. Comments are visible to all team members with access to that rooftop and are never shared with the customer.
+
+<Steps>
+  <Step title="Open the interaction">
+    Navigate to **Activity** and click the interaction you want to annotate.
+  </Step>
+  <Step title="Scroll to Comments">
+    Scroll to the **Comments** section at the bottom of the detail page.
+  </Step>
+  <Step title="Type your note">
+    Click the comment field, enter your note, and press **Add Comment**.
+  </Step>
+</Steps>
+
+Comments are timestamped and attributed to the team member who posted them, giving you a clear audit trail for each interaction.
+
+## Filtering Activity
+
+On the Activity page, use the filter controls in the toolbar to narrow down interactions:
+
+- **Channel** — show only `phone` or `sms` interactions
+- **Direction** — filter by inbound or outbound
+- **Date range** — pick a start and end date to scope the list
+
+Filters stack, so you can combine them — for example, show only inbound phone calls from the past seven days.
+
+<Tip>
+  Use the **Back to Dashboard** button from an interaction detail page to return to your previous view without losing your filter state.
+</Tip>

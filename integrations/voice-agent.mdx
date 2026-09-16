@@ -1,0 +1,74 @@
+---
+title: "How the LotTech Voice AI Agent Works"
+sidebarTitle: "Voice Agent"
+description: "LotTech Voice's AI agent answers inbound dealership calls, creates service and parts requests, and transfers calls to your team when needed."
+---
+
+LotTech Voice places an AI-powered phone agent on the front line of your dealership's inbound calls. Every call to your Twilio number is answered instantly, the caller's intent is identified, a request is created in your dashboard, and your team is looped in only when a human touch is needed.
+
+## How the AI Agent Handles Calls
+
+When a caller dials your dealership's Twilio number, here is what happens from ring to resolution:
+
+<Steps>
+  <Step title="Call is answered">
+    The AI agent picks up immediately and greets the caller with a natural, human-sounding voice. There is no hold queue and no voicemail.
+  </Step>
+  <Step title="Caller intent is identified">
+    The AI listens to the caller's request and classifies it into one of five request types: **Service**, **Parts**, **Cosmetics**, **Rental**, or **General**.
+  </Step>
+  <Step title="Request is created">
+    Based on the caller's intent, the AI automatically creates a structured request in your LotTech dashboard — capturing the caller's name, phone number, vehicle details, and the nature of their request.
+  </Step>
+  <Step title="Call is resolved or transferred">
+    If the AI can fully address the caller's need, it closes the call. If the caller asks to speak with someone, or if the request falls outside what the AI can handle, the call is transferred to the appropriate department.
+  </Step>
+</Steps>
+
+## Call Transfer
+
+The AI agent transfers a call to a human when the caller explicitly asks to speak with someone, or when the AI determines it cannot fulfill the request on its own. Transfers are routed to the department phone number you configure in **Rooftop Settings**.
+
+- If a service-related call needs escalation, the call is transferred to your **Service line**.
+- If a parts-related call needs escalation, the call is transferred to your **Parts line**.
+- General or unclassified escalations go to your default transfer number.
+
+To set or update department transfer numbers, go to **Rooftop Settings → Overview** and update the relevant phone number fields. See [Phone Numbers](/integrations/twilio-phone-numbers) for details.
+
+## SMS Follow-Ups
+
+After certain call types, the AI agent can send an SMS message to the caller's phone number with confirmation details — such as the request reference, next steps, or a callback reminder. This keeps your customers informed even after the call ends and reduces follow-up calls to your staff.
+
+SMS follow-ups are sent automatically when the caller's number supports text messaging.
+
+## Supported Request Types
+
+The AI agent recognizes the following request types and creates the appropriate record in your dashboard:
+
+| Request Type | Example Caller Phrases |
+|---|---|
+| **Service** | "I need an oil change", "My car is making a grinding noise" |
+| **Parts** | "Do you have brake pads for a 2020 Camry?", "I need a side mirror" |
+| **Cosmetics** | "I want a paint correction quote", "Can I get a detail?" |
+| **Rental** | "Can I rent a loaner car?", "Do you have loaners available?" |
+| **General** | "What are your hours?", "Where are you located?" |
+
+## AI Voice Configuration
+
+You can customize how the AI agent sounds to callers — including voice selection, speaking speed, and audio effects like echo and reverb. These settings are configured per rooftop.
+
+Visit the [Voice Configuration](/rooftop/configure-voice) page to:
+
+- Choose a **voice** from available male and female options across Rime (Coda) and Cartesia TTS providers
+- Set **speaking speed** between 0.6× (slower) and 1.5× (faster)
+- Adjust **echo and reverb** intensity from 0% to 100%
+
+Selecting a voice that matches your dealership's brand tone makes a strong first impression on every call.
+
+## After-Hours Handling
+
+When a caller reaches your Twilio number outside your configured business hours, the AI agent still answers the call. It informs the caller that the dealership is currently closed and captures their request so your team can follow up the next business day. No call goes unanswered and no lead is lost.
+
+<Tip>
+  Keep your dealership's business hours up to date in Rooftop Settings so callers receive accurate information about when to expect a callback. Incorrect hours can frustrate callers and create unnecessary follow-up work for your team.
+</Tip>

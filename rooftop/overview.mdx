@@ -1,0 +1,66 @@
+---
+title: "Understanding Rooftops in LotTech Voice"
+sidebarTitle: "Overview"
+description: "A rooftop is a single dealership location in LotTech Voice. Learn how rooftops work, what you can configure, and how to navigate between locations."
+---
+
+In LotTech Voice, every dealership location you operate is represented as a **rooftop**. Your rooftop is the central hub for everything your AI voice agent does — from answering inbound calls to scheduling service appointments — and each location you manage gets its own isolated configuration, team, and data.
+
+## What Is a Rooftop?
+
+A rooftop maps one-to-one with a physical dealership location. No two rooftops share settings or data unless you explicitly configure them the same way. Each rooftop owns:
+
+- **Identity** — name, address, email addresses, and phone numbers
+- **AI voice agent** — the voice persona, speaking speed, and echo settings callers hear
+- **Business hours & closures** — open/close times per day and holiday closed dates
+- **Team** — the managers and staff assigned to that location
+- **Active modules** — Communications, Commerce, Inventory, and more
+- **Phone numbers (DIDs)** — Twilio numbers used for inbound call routing and outbound SMS
+- **Brand** — logo and colors displayed on the customer-facing commerce storefront
+- **Integrations** — Google Calendar, xTime, DealerFX, and Stripe connections
+
+Because every rooftop is self-contained, changes you make to one location never affect another. You can manage each rooftop at its own pace without worrying about cross-location conflicts.
+
+## Navigating Rooftops
+
+Every page in your LotTech Voice dashboard includes the rooftop **slug** in the URL — for example, `/dashboard/demo-auto/`. The slug is a short, URL-safe identifier for your location.
+
+To switch between rooftops:
+
+1. Look for the **rooftop selector** in the left sidebar.
+2. Click the selector to expand a list of all rooftops you are assigned to.
+3. Select the rooftop you want to work in — the dashboard reloads scoped to that location.
+
+LotTech Voice remembers the last rooftop you visited, so the next time you log in you'll land right where you left off.
+
+## Rooftop Settings
+
+Access Rooftop Settings from the sidebar under your rooftop's navigation menu. Settings are organized into four tabs:
+
+| Tab | What you configure |
+|---|---|
+| **Overview** | Name, address, contact info, logo, brand colors, AI voice settings, owned phone numbers |
+| **Operations** | Business hours, closed dates, supported vehicle makes, transport options, third-party integrations |
+| **Commerce** | Stripe payment setup, embeddable widget config, Google Analytics 4 |
+| **Team** | Managers assigned to this rooftop |
+
+<Note>
+  Only **Managers** and **Admins** can access Rooftop Settings. Admins can view and edit settings for every rooftop in the organization. Managers can only edit the rooftops they are assigned to.
+</Note>
+
+Explore the guides below to configure each area of your rooftop:
+
+<CardGroup cols={2}>
+  <Card title="Configure Voice" icon="microphone" href="/rooftop/configure-voice">
+    Choose a voice persona, adjust speaking speed, and tune echo settings for your AI voice agent.
+  </Card>
+  <Card title="Business Hours" icon="clock" href="/rooftop/business-hours">
+    Set open and close times, add holiday closures, and configure supported vehicle makes.
+  </Card>
+  <Card title="Team Management" icon="users" href="/rooftop/team-management">
+    Assign and remove managers to control who has access to this rooftop's data.
+  </Card>
+  <Card title="Commerce Setup" icon="credit-card" href="/commerce/stripe-setup">
+    Connect Stripe, configure your embeddable storefront, and add GA4 analytics.
+  </Card>
+</CardGroup>

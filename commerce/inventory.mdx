@@ -1,0 +1,112 @@
+---
+title: "Manage Parts and Retail Inventory"
+sidebarTitle: "Inventory"
+description: "Add, update, and bulk-import your dealership's parts and retail inventory in LotTech Voice. Edit prices inline or apply bulk adjustments."
+---
+
+The Inventory module is your central hub for managing everything your dealership sells — from retail accessories to service parts. You can add items one at a time, import a full catalog via CSV, edit prices and quantities directly in the table, and apply bulk price adjustments across your entire inventory in seconds.
+
+<Note>
+  Inventory requires the `inventory` module permission on your rooftop. Contact your LotTech administrator if Inventory is not visible in your sidebar.
+</Note>
+
+## Retail vs. Parts Inventory
+
+LotTech Voice maintains two separate inventory views to keep retail items and service parts organized:
+
+- **Inventory** — retail items such as accessories, merchandise, and add-on products. Accessible from **Inventory** in the sidebar.
+- **Parts Inventory** — OEM and aftermarket service parts. Accessible from **Parts Inventory** in the sidebar.
+
+Both views use the same interface and feature set. The sections below apply equally to both.
+
+## Adding Items
+
+### Add an Individual Item
+
+<Steps>
+  <Step title="Open the Add Item modal">
+    Click the **Add Item** button in the top-right corner of the inventory table.
+  </Step>
+  <Step title="Fill in the item details">
+    Enter the item's **name**, **SKU**, **price**, and **quantity**. All fields are required.
+  </Step>
+  <Step title="Save the item">
+    Click **Save**. The item appears in the table immediately.
+  </Step>
+</Steps>
+
+### Bulk Import via CSV
+
+If you're adding many items at once, upload a CSV file instead of entering items individually.
+
+<Steps>
+  <Step title="Download the template (optional)">
+    Click **Upload CSV**, then click **Download Template** to get a pre-formatted file with the correct column headers.
+  </Step>
+  <Step title="Prepare your file">
+    Fill in your item data — name, SKU, price, quantity, and type — following the template format.
+  </Step>
+  <Step title="Upload your file">
+    Click **Upload CSV**, select your completed file, and confirm. LotTech Voice imports all rows and flags any errors for review.
+  </Step>
+</Steps>
+
+## Editing Items
+
+Every cell in the inventory table is editable inline — no separate edit screen required.
+
+<Steps>
+  <Step title="Click a cell">
+    Click any editable cell (such as price or quantity) in the table row you want to update.
+  </Step>
+  <Step title="Enter the new value">
+    Type the updated value directly in the cell.
+  </Step>
+  <Step title="Confirm the change">
+    Press **Enter** or click outside the cell to save. The table updates instantly.
+  </Step>
+</Steps>
+
+<Note>
+  Setting an item's quantity to **0** will prompt a confirmation dialog before saving. A zero quantity marks the item as unavailable on the customer-facing storefront, so confirm intentionally.
+</Note>
+
+## Bulk Price Updates
+
+To apply a percentage price change across all items (or a filtered subset) at once:
+
+<Steps>
+  <Step title="Open Bulk Price Update">
+    Click the **Bulk Price Update** button above the inventory table.
+  </Step>
+  <Step title="Enter the adjustment percentage">
+    Type a percentage value. Use a **positive number** to increase prices (e.g., `5` for +5%) or a **negative number** to decrease them (e.g., `-10` for −10%).
+  </Step>
+  <Step title="Confirm the update">
+    Review the summary and click **Apply**. All matching items are updated immediately.
+  </Step>
+</Steps>
+
+<Info>
+  Bulk Price Update applies to all items currently shown in the table. Use the search bar or filters first to narrow the affected set before running the update.
+</Info>
+
+## Deleting Items
+
+<Steps>
+  <Step title="Locate the item">
+    Find the item you want to remove using the search bar or by scrolling the table.
+  </Step>
+  <Step title="Click the delete icon">
+    Click the **trash icon** on the right side of the item's row.
+  </Step>
+  <Step title="Confirm deletion">
+    Click **Delete** in the confirmation dialog. The item is permanently removed from inventory.
+  </Step>
+</Steps>
+
+## Searching and Pagination
+
+Use the **search bar** at the top of the table to find items by name or SKU. Results update as you type.
+
+The inventory table paginates at **50 items per page**. Use the pagination controls at the bottom of the table to move between pages. Your current search and filter state is preserved as you paginate.

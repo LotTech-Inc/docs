@@ -1,47 +1,71 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with LotTech Voice"
+sidebarTitle: "Quickstart"
+description: "Set up your LotTech Voice account, configure your first rooftop, and have your AI voice agent answering calls in under 30 minutes."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+This guide walks you through everything from your first login to your first AI-handled call. By the end, you'll have your rooftop configured, your voice agent live on your dealership's phone number, and a clear picture of how interactions flow into your dashboard.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Sign in">
+    Navigate to your LotTech Voice dashboard URL in your browser. Enter your email address and password on the login page, then click **Sign In**.
 
-    ```bash
-    npm install your-package
-    ```
+    If you haven't received your credentials yet, contact your LotTech administrator or your LotTech representative. They'll provision your account and send you a welcome email with a link to set your password.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
+  <Step title="Select your rooftop">
+    After a successful login, the dashboard automatically redirects you to your active rooftop. If you manage multiple locations, use the **rooftop switcher** in the left sidebar to change locations.
 
-    ```bash
-    your-cli init
-    ```
+    All data you see — interactions, requests, inventory, orders — belongs to the rooftop currently selected. Switch rooftops at any time without logging out.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
+  <Step title="Review your dashboard">
+    The home page gives you an at-a-glance view of what's happening at your rooftop right now:
 
-    ```bash
-    your-cli start
-    ```
+    - **Pending requests** — requests that have been created but not yet assigned or resolved
+    - **Your assigned requests** — requests that have been routed specifically to you
+    - **Recent interactions** — the latest calls handled by the AI voice agent
+    - **Analytics KPIs** — key performance metrics for your rooftop (visible to users with the Analytics module enabled)
+
+    Take a moment to familiarize yourself with the layout before moving on to configuration.
+  </Step>
+  <Step title="Configure your voice agent">
+    Go to **Rooftop Settings > Overview** to set up the core details your voice agent needs to handle calls correctly:
+
+    1. **Phone number** — Connect the Twilio phone number customers will call. This is the number the AI agent monitors for inbound calls.
+    2. **AI voice** — Choose a voice from the Rime or Cartesia TTS providers to match the tone of your dealership.
+    3. **Business hours** — Define when your dealership is open so the agent can greet callers appropriately and manage after-hours expectations.
+
+    Save your settings before moving to the next step. Changes take effect immediately.
+  </Step>
+  <Step title="Handle your first call">
+    With your rooftop configured, your AI voice agent is live. Call the Twilio number you connected in the previous step to hear the agent in action.
+
+    After the call ends, return to your dashboard. You'll see:
+
+    - A new entry in **Interactions** with a full transcript and recording
+    - Any **requests** the agent captured during the call
+    - An updated entry in **Call Logs**
+
+    Your team can now review, assign, and resolve requests directly from the dashboard — no manual call notes required.
   </Step>
 </Steps>
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+<Note>
+  Admins can create additional rooftops and invite new users from the **Admin** panel. If you need to add a team member or set up a second location, head to **Admin > Manage Users** or **Admin > Rooftops**.
+</Note>
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Rooftop Setup" icon="building" href="/rooftop/configure-voice">
+    Dive deeper into rooftop settings — configure your AI persona, call routing rules, and department-level handling.
+  </Card>
+  <Card title="Configure Voice Agent" icon="microphone" href="/rooftop/configure-voice">
+    Customize your AI voice, adjust conversation flows, and connect your calendar and payment integrations.
+  </Card>
+  <Card title="Manage Requests" icon="list-check" href="/communications/interactions">
+    Learn how to assign, update, and resolve service, parts, and cosmetic requests captured by the voice agent.
+  </Card>
+  <Card title="Analytics" icon="chart-line" href="/analytics/overview">
+    Explore KPI dashboards, trend charts, and period-over-period reporting to measure your voice agent's impact.
+  </Card>
+</CardGroup>
