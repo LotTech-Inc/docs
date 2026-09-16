@@ -3,9 +3,22 @@
   "name": "LotTech Help",
   "theme": "almond",
   "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
+    "primary": "#6F6CEF",
+    "light": "#71BFFF",
+    "dark": "#6F6CEF"
+  },
+  "logo": {
+    "light": "/logo/lottech-light.png",
+    "dark": "/logo/lottech-dark.png"
+  },
+  "fonts": {
+    "family": "Montserrat"
+  },
+  "background": {
+    "color": {
+      "light": "#FFFFFF",
+      "dark": "#1A2042"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
