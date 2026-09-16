@@ -4,21 +4,21 @@ sidebarTitle: "Stripe Setup"
 description: "Connect your Stripe account to LotTech Voice to accept payments on your customer-facing parts storefront and track revenue in the Orders module."
 ---
 
-Connecting Stripe to LotTech Voice enables your customer-facing parts storefront to accept payments online and routes revenue data into the Orders module for tracking. The setup process guides you through Stripe's own onboarding flow and takes only a few minutes to complete.
+Connecting Stripe to LotTech Voice enables your customer-facing parts storefront to accept payments online and routes revenue data into the Orders module for tracking. A rooftop admin completes the connection through Stripe's onboarding flow.
 
 ## Prerequisites
 
 Before connecting Stripe, confirm the following:
 
-- You have a **Stripe account**, or you're prepared to create one during the onboarding flow. Stripe accounts are free to create at [stripe.com](https://stripe.com).
-- The **Commerce module** is enabled on your rooftop. If you don't see the Commerce tab in Rooftop Settings, contact your LotTech administrator.
-- You have **manager-level access** in LotTech Voice. The Stripe setup section is only available to users with the manager role.
+- You are authorized to provide your dealership's business and payment details during Stripe onboarding.
+- The **Commerce module** is enabled on your rooftop. If you don't see the Commerce tab in Rooftop Settings, ask your rooftop admin to check your access and the dealership's enabled products.
+- You are a **rooftop admin** at the dealership you are configuring. A Commerce Manager can work on orders without being able to change shared payment settings.
 
 ## Connecting Stripe
 
 <Steps>
   <Step title="Open Rooftop Settings">
-    Click your rooftop name or the settings icon to open **Rooftop Settings**, then navigate to the **Commerce** tab.
+    Select **Rooftop Settings** in the sidebar, then open the **Commerce** tab.
   </Step>
   <Step title="Start the connection">
     Click **Set Up Stripe** in the Stripe Payments section.
@@ -53,7 +53,7 @@ After your Stripe account is connected and onboarding is complete, you need to c
 
 <Steps>
   <Step title="Configure taxes in Stripe">
-    In your [Stripe Tax Settings](https://dashboard.stripe.com/settings/tax), set up the appropriate tax rates and collection rules for your location and products.
+    In your [Stripe Tax Settings](https://dashboard.stripe.com/settings/tax), complete the tax settings required for your business.
   </Step>
   <Step title="Confirm in LotTech Voice">
     Back in **Rooftop Settings → Commerce**, click **Confirm Tax Setup** once your Stripe tax settings are correct. LotTech Voice will verify the configuration with Stripe.
@@ -61,23 +61,8 @@ After your Stripe account is connected and onboarding is complete, you need to c
 </Steps>
 
 <Note>
-  After confirming tax setup, Stripe may still need to review your account before payments are fully enabled. If you see a "Waiting for Stripe Approval" message, no further action is required — Stripe will complete the review automatically.
+  After confirming tax setup, Stripe may still need to review your account before payments are fully enabled. If you see a "Waiting for Stripe Approval" message, check Stripe for any outstanding requirements while the review is pending.
 </Note>
-
-## GA4 Analytics
-
-A LotTech administrator can optionally connect Google Analytics 4 to track storefront activity such as page views, product views, and purchases. This setting is managed at the admin level in Rooftop Settings.
-
-<Steps>
-  <Step title="Find your Measurement ID">
-    In your Google Analytics 4 property, go to **Admin → Data Streams** and copy the **Measurement ID** (formatted as `G-XXXXXXXXXX`).
-  </Step>
-  <Step title="Enter the Measurement ID">
-    In **Rooftop Settings → Commerce**, paste your Measurement ID into the **GA4 Measurement ID** field and save.
-  </Step>
-</Steps>
-
-Once connected, storefront events will appear in your GA4 property within 24–48 hours.
 
 ## Embed Configuration
 
@@ -100,7 +85,7 @@ Once your Stripe account is active, you can embed the parts storefront directly 
 
 ## Disconnecting Stripe
 
-If you need to unlink your Stripe account, contact your LotTech administrator. Administrators can remove the Stripe account from **Rooftop Settings → Commerce**.
+If you need to disconnect or replace your dealership's Stripe account, contact LotTech support before making changes. This action is not available in the customer dashboard.
 
 <Warning>
   Disconnecting Stripe immediately disables payment processing on your storefront. Customers will not be able to complete purchases until a Stripe account is reconnected. Ensure all outstanding orders are fulfilled or otherwise resolved before disconnecting.

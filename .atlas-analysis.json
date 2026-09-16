@@ -1,7 +1,7 @@
 {
   "projectType": "saas",
   "projectName": "LotTech Voice",
-  "projectDescription": "LotTech Voice is an AI-powered voice agent dashboard for automotive dealerships that handles inbound customer calls, manages service and parts requests, tracks interactions, and drives commerce — all from a single multi-rooftop platform.",
+  "projectDescription": "Customer help for dealership managers and rooftop admins using LotTech. Covers daily workflows and rooftop administration within assigned dealerships.",
   "theme": "almond",
   "primaryColor": "#ef7025",
   "lightColor": "#eec9bc",
@@ -9,91 +9,81 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Using LotTech",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "Start here",
             "pages": [
+              "index",
               "introduction",
-              "quickstart"
+              "quickstart",
+              "account/sign-up",
+              "account/roles-and-permissions"
             ]
           },
           {
-            "group": "Account & Access",
+            "group": "Your account",
             "pages": [
-              "account/sign-up",
-              "account/roles-and-permissions",
+              "account/email-notifications",
               "account/profile-settings"
             ]
           },
           {
-            "group": "Rooftop Setup",
-            "pages": [
-              "rooftop/overview",
-              "rooftop/configure-voice",
-              "rooftop/business-hours",
-              "rooftop/team-management"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Using the Dashboard",
-        "groups": [
-          {
-            "group": "Communications",
+            "group": "Customer conversations",
             "pages": [
               "communications/interactions",
               "communications/requests",
               "communications/customers",
-              "communications/call-logs"
+              "communications/call-logs",
+              "integrations/voice-agent"
             ]
           },
           {
-            "group": "Commerce & Inventory",
+            "group": "Orders and inventory",
             "pages": [
               "commerce/orders",
               "commerce/inventory",
               "commerce/rental-inventory",
-              "commerce/custom-pricing",
-              "commerce/stripe-setup"
+              "commerce/custom-pricing"
             ]
           },
           {
-            "group": "Analytics",
+            "group": "Reporting",
             "pages": [
               "analytics/overview",
               "analytics/interaction-metrics",
               "analytics/request-metrics"
             ]
-          },
-          {
-            "group": "Admin Tools",
-            "pages": [
-              "admin/manage-users",
-              "admin/manage-rooftops",
-              "admin/onboarding"
-            ]
           }
         ]
       },
       {
-        "tab": "Integrations",
+        "tab": "Rooftop admins",
         "groups": [
           {
-            "group": "Voice & Telephony",
+            "group": "Your dealership",
             "pages": [
-              "integrations/voice-agent",
-              "integrations/twilio-phone-numbers"
+              "rooftop/overview",
+              "rooftop/setup",
+              "rooftop/team-management",
+              "rooftop/business-hours",
+              "rooftop/configure-voice",
+              "rooftop/phone-and-transfers"
             ]
           },
           {
-            "group": "Third-Party",
+            "group": "Scheduling",
             "pages": [
               "integrations/google-calendar",
-              "integrations/stripe",
               "integrations/xtime",
               "integrations/dealerfx"
+            ]
+          },
+          {
+            "group": "Payments and storefront",
+            "pages": [
+              "commerce/stripe-setup",
+              "integrations/stripe"
             ]
           }
         ]
@@ -101,7 +91,7 @@
     ]
   },
   "keyFeatures": [
-    "AI voice agent that handles inbound dealership calls 24/7",
+    "Receptionist for calls routed to LotTech",
     "Multi-rooftop (multi-location) support with per-location configuration",
     "Interaction tracking with transcripts, recordings, and call logs",
     "Request management with assignment, status tracking, and fulfillment metrics",
@@ -111,34 +101,14 @@
     "Commerce orders with Stripe payment processing",
     "Analytics dashboard with KPIs, trend charts, and period-over-period comparisons",
     "Customizable AI voice selection (Rime and Cartesia TTS providers)",
-    "Role-based access control (Admin, Manager) with module-level permissions",
+    "Manager and rooftop admin access within assigned dealerships",
     "Google Calendar integration for service scheduling",
     "xTime and DealerFX scheduling integrations",
     "Announcements and release notes feed",
     "Organization (B2B/wholesale) management"
   ],
-  "publicApiSurface": [
-    "GET /api/v1/interactions — list interactions for a rooftop",
-    "GET /api/v1/interactions/:id — interaction detail with transcript",
-    "GET /api/v1/interactions/stats — aggregated call/SMS stats with time-window buckets",
-    "GET /api/v1/requests — list service/parts/cosmetics requests",
-    "GET /api/v1/requests/:id — request detail",
-    "GET /api/v1/requests/stats — request KPIs (created, fulfilled, pending)",
-    "GET /api/v1/analytics/requests — fulfillment time and pending aging analytics",
-    "GET /api/v1/customers — customer list with search and pagination",
-    "GET /api/v1/customers/:id — customer profile with interaction history",
-    "GET /api/v1/rooftops — list rooftops accessible to the user",
-    "PATCH /api/v1/rooftops/:id — update rooftop settings",
-    "GET /api/v1/orders — list commerce orders",
-    "GET /api/v1/orders/:orderNumber — order detail",
-    "GET /api/v1/orders/stats — order revenue and status counts",
-    "GET /api/v1/inventory — list retail or parts inventory items",
-    "GET /api/v1/inventory/stats — inventory summary counts",
-    "GET /api/v1/rental-inventory — list rental fleet vehicles",
-    "GET /api/v1/logs/rooftop/:rooftopId/folders — call log folder list",
-    "GET /api/v1/logs/folder/:folderPath/contents — call log files (recordings, transcripts)",
-    "GET /api/v1/organizations — parts organizations list",
-    "GET /api/v1/stripe/account-status — Stripe onboarding and payout status",
-    "GET /api/v1/release-notes — platform announcements and changelog"
+  "audience": [
+    "Dealership managers",
+    "Rooftop admins"
   ]
 }

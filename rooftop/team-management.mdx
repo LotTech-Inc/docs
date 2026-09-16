@@ -1,130 +1,64 @@
 ---
-title: "Manage Rooftop Team Members, Roles, and Permissions"
-sidebarTitle: "Team Management"
-description: "Assign roles to team members on a rooftop, manage their permissions, and control email notification and voice transfer preferences per person."
+title: "Invite and manage your team"
+sidebarTitle: "Team management"
+description: "Rooftop admins can invite teammates, manage their dealership roles, and update email notification and voice transfer preferences."
 ---
 
-Every rooftop in LotTech Voice has a team of assigned members who can access its dashboard, handle customer communications, and manage settings. Because access is scoped per rooftop, adding someone to your team gives them visibility into that location only — not the rest of your organization. Only **Admins** and users with team management permissions can modify rooftop team assignments.
+**For rooftop admins.** Use **Rooftop Settings → Team** to manage people at the dealership you have selected.
 
-## Viewing the Team
+Managers can view the team information available to them. Team management controls appear for rooftop admins.
 
-<Steps>
-  <Step title="Open Rooftop Settings">
-    In the sidebar, navigate to **Rooftop Settings** for your location.
-  </Step>
-  <Step title="Click the Team tab">
-    Select the **Team** tab at the top of the settings page.
-  </Step>
-</Steps>
-
-The Team tab lists every member currently assigned to the rooftop, showing each person's **name**, **email address**, and **roles**. It also shows per-member toggles for email notifications and voice call transfers. Use this view to confirm who has access before assigning new members or removing existing ones.
-
-## Assigning a Role to an Existing User
-
-Use this flow when the person already has a LotTech Voice account and you want to give them a role at this rooftop.
-
-<Note>
-  Only **Admins** and users with team management permissions can assign roles to a rooftop.
-</Note>
+## Invite a teammate
 
 <Steps>
   <Step title="Open the Team tab">
-    Navigate to Rooftop Settings > **Team**.
+    Select your dealership, then open **Rooftop Settings → Team**.
   </Step>
-  <Step title="Click Add Role">
-    Click the **Add Role** button in the upper area of the Team tab.
+  <Step title="Select Invite Teammate">
+    Enter the teammate's email address and choose their role.
   </Step>
-  <Step title="Select the user">
-    Search for and select the person you want to add. Admins can search across all users in the organization; other team managers see only members already at this rooftop.
-  </Step>
-  <Step title="Choose a role">
-    Select the appropriate role from the dropdown. Available roles depend on which modules are active for this rooftop:
+  <Step title="Send the invitation">
+    Send the invite. A new teammate receives a link to accept the invitation and set their own password and contact details.
 
-    - **Rooftop Admin** — full access to all settings for this rooftop
-    - **Parts Manager** — access to parts module (when Parts is active)
-    - **Cosmetics Manager** — access to cosmetics module (when Cosmetics is active)
-    - **Service Manager** — access to service module (when Service is active)
-    - **Commerce Manager** — access to commerce module (when Commerce is active)
-    - **Rental Manager** — access to rental module (when Rental is active)
-    - **Email Manager** — access to email module (when Email is active)
-  </Step>
-  <Step title="Confirm the assignment">
-    Click **Assign Role**. The user now appears in the Team list with their new role.
+    If they already have an account, LotTech grants the selected role and notifies them. They can use their existing sign-in.
   </Step>
 </Steps>
 
-<Note>
-  A person can hold multiple roles at the same rooftop. Use the **Add Role** flow again to assign an additional role to someone already on the team.
-</Note>
+Available roles include **Rooftop Admin** and manager roles for the products enabled at your dealership. Choose a manager role for day-to-day department work. Choose **Rooftop Admin** when the person also needs to manage the dealership's team and settings.
 
-## Creating a New User and Assigning a Role
+## Manage pending invitations
 
-If the person doesn't yet have a LotTech Voice account, an **Admin** can create their account and assign a role in a single step.
+New account invitations appear under **Pending Invites** until accepted. Use:
 
-<Note>
-  Only **Admins** can create new user accounts.
-</Note>
+- **Resend** to send a fresh invitation.
+- **Revoke** to cancel an invitation that should no longer be used.
 
-<Steps>
-  <Step title="Open the Team tab">
-    Navigate to Rooftop Settings > **Team**.
-  </Step>
-  <Step title="Click Add User">
-    Click the **Add User** button. This option is visible to Admins only.
-  </Step>
-  <Step title="Fill in the user's details">
-    Enter the person's first name, last name, email address, password, and optionally a phone number.
-  </Step>
-  <Step title="Choose a role">
-    Select the role to assign to this person at the current rooftop.
-  </Step>
-  <Step title="Create the user">
-    Click **Create User**. LotTech Voice creates the account and assigns the role to this rooftop in one action.
-  </Step>
-</Steps>
+If LotTech asks you to wait before resending, wait for the displayed interval before trying again.
 
-## Removing a Role
+## Add a role to a current teammate
 
-<Note>
-  Only **Admins** and users with team management permissions can remove roles from a rooftop.
-</Note>
+1. Select **Add Role**.
+2. Choose the teammate from the people already at your rooftop.
+3. Select the role you want to add.
+4. Select **Assign Role**.
 
-<Steps>
-  <Step title="Open the Team tab">
-    Navigate to Rooftop Settings > **Team**.
-  </Step>
-  <Step title="Find the member">
-    Locate the person whose role you want to remove in the team list.
-  </Step>
-  <Step title="Click the remove icon on their role">
-    Each role appears as a badge next to the person's name. Click the **×** on the role badge you want to remove.
-  </Step>
-  <Step title="Confirm">
-    Confirm the removal when prompted.
-  </Step>
-</Steps>
+A teammate can have multiple roles at the same dealership. To add someone who is not yet on your team, use **Invite Teammate**.
+
+## Remove a role
+
+Find the teammate, select the **×** beside the role badge, and confirm the removal.
 
 <Warning>
-  If the role you are removing is the person's **only role** at this rooftop, removing it also removes them from the rooftop entirely, immediately revoking their access to all data for that location — including communications, customers, requests, and logs. You can reassign them at any time using the steps above.
+  Removing someone's last role at a rooftop removes their access to that dealership. Check the location and the role before confirming.
 </Warning>
 
-## Member Preferences
+## Set teammate preferences
 
-Each team member has two per-rooftop preferences you can manage from the Team tab:
+The team list includes two toggles:
 
-- **Email notifications** — when enabled, the member receives email alerts for activity at this rooftop (off by default).
-- **Voice transfers** — when enabled, the AI voice agent can transfer live calls to this member (on by default).
+- **Email notifications** — alerts for new requests and customer follow-up. See [Email notifications](/account/email-notifications).
+- **Voice transfers** — whether the receptionist can transfer callers to the teammate's phone when they ask for that person by name.
 
-To change a preference, use the toggle next to the member's name in the Team list. Changes take effect immediately.
+Each change saves automatically. These controls update the person's own preferences, which they can also change from **Settings**.
 
-## What Team Members Can Do
-
-Once assigned to a rooftop, a member's available actions depend on their **role and module permissions**. In general, rooftop team members can:
-
-- View the rooftop dashboard and activity feed
-- Handle inbound requests and customer communications
-- View customer records and conversation histories
-- Access call logs and AI interaction transcripts
-- Edit rooftop settings within the modules their role covers
-
-For a full breakdown of what each role can access across the platform, see the [Roles and Permissions](/account/roles-and-permissions) guide.
+Ask teammates to check their profile phone number before receiving transfers. Department transfer numbers are managed separately under [Phone numbers and transfers](/rooftop/phone-and-transfers).

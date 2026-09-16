@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "LotTech Voice",
+  "name": "LotTech Help",
   "theme": "almond",
   "colors": {
     "primary": "#ef7025",
@@ -11,91 +11,81 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Using LotTech",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "Start here",
             "pages": [
+              "index",
               "introduction",
-              "quickstart"
+              "quickstart",
+              "account/sign-up",
+              "account/roles-and-permissions"
             ]
           },
           {
-            "group": "Account & Access",
+            "group": "Your account",
             "pages": [
-              "account/sign-up",
-              "account/roles-and-permissions",
+              "account/email-notifications",
               "account/profile-settings"
             ]
           },
           {
-            "group": "Rooftop Setup",
-            "pages": [
-              "rooftop/overview",
-              "rooftop/configure-voice",
-              "rooftop/business-hours",
-              "rooftop/team-management"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Using the Dashboard",
-        "groups": [
-          {
-            "group": "Communications",
+            "group": "Customer conversations",
             "pages": [
               "communications/interactions",
               "communications/requests",
               "communications/customers",
-              "communications/call-logs"
+              "communications/call-logs",
+              "integrations/voice-agent"
             ]
           },
           {
-            "group": "Commerce & Inventory",
+            "group": "Orders and inventory",
             "pages": [
               "commerce/orders",
               "commerce/inventory",
               "commerce/rental-inventory",
-              "commerce/custom-pricing",
-              "commerce/stripe-setup"
+              "commerce/custom-pricing"
             ]
           },
           {
-            "group": "Analytics",
+            "group": "Reporting",
             "pages": [
               "analytics/overview",
               "analytics/interaction-metrics",
               "analytics/request-metrics"
             ]
-          },
-          {
-            "group": "Admin Tools",
-            "pages": [
-              "admin/manage-users",
-              "admin/manage-rooftops",
-              "admin/onboarding"
-            ]
           }
         ]
       },
       {
-        "tab": "Integrations",
+        "tab": "Rooftop admins",
         "groups": [
           {
-            "group": "Voice & Telephony",
+            "group": "Your dealership",
             "pages": [
-              "integrations/voice-agent",
-              "integrations/twilio-phone-numbers"
+              "rooftop/overview",
+              "rooftop/setup",
+              "rooftop/team-management",
+              "rooftop/business-hours",
+              "rooftop/configure-voice",
+              "rooftop/phone-and-transfers"
             ]
           },
           {
-            "group": "Third-Party",
+            "group": "Scheduling",
             "pages": [
               "integrations/google-calendar",
-              "integrations/stripe",
               "integrations/xtime",
               "integrations/dealerfx"
+            ]
+          },
+          {
+            "group": "Payments and storefront",
+            "pages": [
+              "commerce/stripe-setup",
+              "integrations/stripe"
             ]
           }
         ]
@@ -104,8 +94,27 @@
   },
   "navbar": {
     "primary": {
-      "type": "github",
-      "href": "https://github.com/LotTech-Inc/lottech-voice-frontend"
+      "type": "button",
+      "label": "Open dashboard",
+      "href": "https://dashboard.lottech.com"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/admin/manage-users",
+      "destination": "/rooftop/team-management"
+    },
+    {
+      "source": "/admin/manage-rooftops",
+      "destination": "/rooftop/overview"
+    },
+    {
+      "source": "/admin/onboarding",
+      "destination": "/rooftop/setup"
+    },
+    {
+      "source": "/integrations/twilio-phone-numbers",
+      "destination": "/rooftop/phone-and-transfers"
+    }
+  ]
 }

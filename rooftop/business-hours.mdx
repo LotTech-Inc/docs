@@ -1,105 +1,35 @@
 ---
-title: "Set Business Hours, Closed Dates, and Vehicle Makes"
-sidebarTitle: "Business Hours"
-description: "Configure your dealership's open hours, holiday closures, and supported vehicle makes so your AI voice agent responds accurately to callers."
+title: "Business hours and holiday closures"
+sidebarTitle: "Business hours"
+description: "Rooftop admins can keep opening hours and closed dates current so callers receive the right dealership information."
 ---
 
-Your AI voice agent relies on your rooftop's business hours to give callers accurate information — whether that's confirming today's closing time, letting a customer know the service bay is closed on a holiday, or gracefully handling an after-hours inquiry. Keeping these settings current ensures every caller gets a response that reflects reality.
+**For rooftop admins.** Set your dealership's opening hours and holiday closures from **Rooftop Settings → Operations**.
 
-## Setting Business Hours
+Managers can check the published settings and ask their rooftop admin to make changes.
 
-<Steps>
-  <Step title="Open Rooftop Settings">
-    In the sidebar, navigate to **Rooftop Settings** for your location.
-  </Step>
-  <Step title="Go to the Operations tab">
-    Click the **Operations** tab at the top of the settings page.
-  </Step>
-  <Step title="Find the Business Hours section">
-    Scroll to **Business Hours** and click **Edit**.
-  </Step>
-  <Step title="Set hours for each day">
-    For each day of the week, set an **open time** and a **close time** using the time pickers. Leave a day blank if your dealership is closed that day.
-  </Step>
-  <Step title="Save your changes">
-    Click **Save** to apply the updated hours. The AI agent will use the new schedule immediately.
-  </Step>
-</Steps>
+## Update business hours
 
-<Info>
-  Any day of the week that does not have an open and close time configured is treated as **closed**. If your dealership is open seven days a week, make sure all seven days have times set.
-</Info>
+1. Confirm that you have selected the correct dealership.
+2. Open **Rooftop Settings → Operations**.
+3. Select **Edit** in **Business Hours**.
+4. Set opening and closing times for each day your dealership is open. Leave closed days without times.
+5. Select **Save Hours**.
 
-## Adding Closed Dates
+Review the displayed schedule after saving. Check your dealership's timezone as well if opening or closing times appear incorrect.
 
-Closed dates let you block out specific days — like holidays or special events — so the AI agent tells callers the dealership is closed, even if those days would otherwise fall within normal business hours.
+## Add holiday closures
 
-<Steps>
-  <Step title="Navigate to Closed Dates">
-    In Rooftop Settings > Operations, scroll to the **Closed Dates** section and click **Edit**.
-  </Step>
-  <Step title="Choose a date type">
-    Select either a **specific date** (using the date picker) or a **named holiday** from the dropdown.
-  </Step>
-  <Step title="Select the holiday or date">
-    If you chose a named holiday, select from the available options:
+Closed dates override your normal weekly opening hours.
 
-    - Thanksgiving
-    - Christmas
-    - New Year's Day
-    - Independence Day
-    - Labor Day
-    - Memorial Day
-  </Step>
-  <Step title="Save the closed date">
-    Click **Save** to confirm. The date now appears in your closed dates list.
-  </Step>
-</Steps>
+1. Open **Closed Dates** on the **Operations** tab and select **Edit**.
+2. Add the dates or named holidays when your dealership will be closed.
+3. Select **Save Changes**.
 
-<Tip>
-  Add your closed dates well in advance of the actual holiday. Callers who ask about upcoming availability before the holiday arrives will hear accurate information, not a guess based on your standard schedule.
-</Tip>
+Review this list before holidays or other planned closures. Remove or update entries when your plans change.
 
-## Vehicle Makes
+## Service transport options
 
-The vehicle makes setting tells your AI agent which brands your rooftop sells and services. When a caller asks a brand-specific question — "Do you work on Hondas?" — the agent uses this list to answer confidently and correctly.
+If your dealership uses manual callbacks or Google Calendar for service scheduling, the **Transport Options** section lets you maintain the options available to customers. Only include services your dealership offers.
 
-<Steps>
-  <Step title="Open Vehicle Makes settings">
-    In Rooftop Settings > Operations, scroll to **Vehicle Makes** and click **Edit**.
-  </Step>
-  <Step title="Add or remove makes">
-    Type a make name (for example, Toyota, Honda, or Ford) to add it to the list. Click the **×** next to any make to remove it.
-  </Step>
-  <Step title="Save">
-    Click **Save** when your list is complete.
-  </Step>
-</Steps>
-
-<Note>
-  If no vehicle makes are configured, the agent treats all makes as allowed. Once you add at least one make, the agent uses your list to answer brand-specific questions accurately.
-</Note>
-
-Keep this list accurate and up to date — if your rooftop picks up a new brand franchise or drops one, update Vehicle Makes so the agent reflects the change immediately.
-
-## Transport Options
-
-Transport options define the ways customers can bring their vehicle in — or receive it back — for service department appointments. Common options include shuttle service, loaner vehicles, and standard drop-off.
-
-<Steps>
-  <Step title="Open Transport Options">
-    In Rooftop Settings > Operations, scroll to **Transport Options** and click **Edit**.
-  </Step>
-  <Step title="Configure your options">
-    Enable or disable each transport type to match the services your service department actually offers.
-  </Step>
-  <Step title="Save">
-    Click **Save** to apply your selections.
-  </Step>
-</Steps>
-
-Your AI agent uses the configured transport options when discussing service scheduling with callers, so only enable options your team can reliably fulfill.
-
-<Note>
-  Transport options are available when your scheduling integration is set to **None (Manual Callback)** or **Google Calendar**. When using a DMS-connected scheduler such as xTime or DealerFX, transport options are sourced directly from that system.
-</Note>
+When using Xtime or DealerFX, transport options come from the connected scheduling system.

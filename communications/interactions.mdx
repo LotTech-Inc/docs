@@ -4,7 +4,7 @@ sidebarTitle: "Interactions"
 description: "Every voice call and SMS handled by your AI agent is logged as an interaction. Review transcripts, actions, and requests from each contact event."
 ---
 
-Every time your AI voice agent connects with a customer — whether by phone or text — LotTech Voice captures the full event as an **interaction**. From a single interaction detail page you can review the transcript, see what actions the agent took, check which requests were created, and leave notes for your team. Nothing falls through the cracks.
+Every time your AI voice agent connects with a customer — whether by phone or text — LotTech Voice captures the full event as an **interaction**. From a single interaction detail page you can review the transcript, see what actions the agent took, check which requests were created, and leave notes for your team.
 
 ## What Is an Interaction?
 
@@ -54,21 +54,18 @@ Click any interaction in the list to open its detail page. Here you'll find ever
   </Card>
 </CardGroup>
 
-## Caller ID Trust
+## Caller ID information
 
-LotTech Voice uses **STIR/SHAKEN** caller ID verification to help you identify whether an inbound voice call is legitimate. Each interaction displays a trust badge next to the caller's number based on the verification result:
+The caller ID badge describes the phone number shown for a call:
 
 | Badge | Meaning |
 |---|---|
-| **Verified** | The carrier confirmed the caller ID matches the originating number. |
-| **Unverified** | The call could not be verified — treat with caution. |
-| **Spoofed / Spam Risk** | Verification failed or the number exhibits spoofing signals. |
+| **Verified** | The call's number passed the caller ID check. |
+| **Unconfirmed** | The caller's number could not be confirmed. |
+| **Caller ID hidden** | The displayed source would be a dealership routing number, so it is hidden. |
+| **Unavailable** | No caller phone number is available. |
 
-<Warning>
-  An "Unverified" badge doesn't always mean the caller is malicious — some carriers don't support STIR/SHAKEN. Use it as one signal alongside context from the transcript.
-</Warning>
-
-Use the trust badge to prioritize follow-up on suspicious contacts and to protect your team from acting on spoofed inbound calls.
+A number check does not verify the caller's identity. Review the conversation and confirm contact details before following up.
 
 ## Adding Notes
 

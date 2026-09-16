@@ -1,33 +1,29 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# LotTech customer help
 
-# Documentation project instructions
+## Audience and scope
 
-## About this project
+- Write for dealership customers: managers and rooftop admins.
+- A rooftop means one dealership location. Both roles are limited to their assigned rooftops.
+- Managers handle daily work within assigned product roles and manage their own preferences.
+- Rooftop admins also manage their dealership's team and shared configuration.
+- Never treat LotTech's internal Administrator role as a customer role or direct readers to platform-wide Admin pages.
+- Do not document employee-only provisioning, global user management, rooftop creation, channel activation, or internal implementation details. Direct customer requests for those changes to LotTech support.
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+## Content evidence
 
-## Terminology
+- Verify steps, button labels, and access rules in the dashboard source before publishing. Source: `../lottech-voice-website/lottech-voice-frontend` and its backend sibling.
+- Do not infer rooftop-admin capabilities from the internal `isAdmin` branch. Check the actual permission controlling each action.
+- Use **Invite Teammate** for new team access. Do not tell rooftop admins to create accounts with another person's password.
+- Personal notification and transfer preferences are the same preferences whether changed from Settings or by a rooftop admin from Team.
+- Describe only verified customer behavior. Avoid guarantees about call answering, delivery, timing, or future features.
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+## Writing and publishing
 
-## Style preferences
-
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
-
-## Content boundaries
-
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- This site uses Mintlify. Pages are MDX with title and description frontmatter; navigation lives in `docs.json`.
+- Use the Mintlify skill for components and validation.
+- Write in second person, use concise instructions, and bold exact UI labels.
+- Say "rooftop admin" instead of the ambiguous "admin". Use department manager labels where they clarify the workflow.
+- Keep manager tasks easy to find. Put shared configuration and team-management instructions under Rooftop admins.
+- Keep documentation changes focused on user workflows, not source files or backend mechanics.
+- Run `mint broken-links` and `mint validate`, and inspect the rendered preview before publishing.
+- Remove employee-only pages from published content; hiding them from navigation alone is insufficient. Redirect retired links to the relevant customer guide.

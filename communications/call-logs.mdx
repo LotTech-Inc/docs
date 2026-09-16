@@ -11,38 +11,16 @@ Call Logs give you direct access to the raw recordings and transcript files gene
 Go to **Logs** in the left sidebar to open the Call Logs section. You'll see a list of **call session folders** sorted in reverse-chronological order — the most recent calls appear at the top.
 
 <Note>
-  Access to Call Logs requires the **Communications module** permission. If you don't see **Logs** in your sidebar, ask your LotTech administrator to verify your role permissions.
+  Logs is available to team members with access to customer communications. Ask your rooftop admin if this section is missing.
 </Note>
 
 Each row in the list represents one call session. The folder name is converted to a human-readable date and time so you can identify calls at a glance.
 
-## Folder Structure
+## Find the files you need
 
-Every call session is stored in its own folder. Folder names follow this format:
+Open the folder for the call you want to review. Available files can include a recording and a conversation transcript.
 
-```
-{channel}_{YYYYMMDD}_{HHMMSS}_{sessionId}
-```
-
-For example: `call_20250616_202707_a3f9c2` or `sms_20260327_204821_491b56a3`
-
-| Segment | Description |
-|---|---|
-| `channel` | The channel for the session — `call` for voice, `sms` for text. |
-| `YYYYMMDD` | The date of the session (year, month, day — no separators). |
-| `HHMMSS` | The session start time (hour, minute, second — no separators). |
-| `sessionId` | A unique identifier for the session. |
-
-The platform displays each folder as a formatted local date and time, so you don't need to parse the raw name yourself.
-
-Inside each folder you'll find:
-
-- **Recording file** (`.wav`) — the audio of the voice call
-- **Transcript file** (`.txt`) — the text conversation from the session
-
-<Info>
-  Call Logs are stored on a per-session basis and reflect the raw session data. They are separate from the **Interactions** view, which presents structured metadata — duration, direction, requests created, and so on — derived from the same session. Use Interactions for day-to-day management and Call Logs when you need the source file.
-</Info>
+Use **Activity** for day-to-day conversation review. Use **Logs** when you need to inspect or download the available session files.
 
 ## Viewing a Recording
 

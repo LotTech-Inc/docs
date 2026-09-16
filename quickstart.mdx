@@ -1,71 +1,45 @@
 ---
-title: "LotTech Voice Quickstart: From Login to Live Calls"
-sidebarTitle: "Quickstart"
-description: "Set up your LotTech Voice account, configure your first rooftop, and have your AI voice agent answering calls in under 30 minutes."
+title: "Get started with your dashboard"
+sidebarTitle: "First steps"
+description: "Sign in to LotTech, choose your dealership, enable email notifications, and start working on customer requests."
 ---
 
-This guide walks you through everything from your first login to your first AI-handled call. By the end, you'll have your rooftop configured, your voice agent live on your dealership's phone number, and a clear picture of how interactions flow into your dashboard.
+Follow these steps when you first join your dealership's LotTech dashboard. They apply to both managers and rooftop admins.
 
 <Steps>
-  <Step title="Sign in">
-    Navigate to your LotTech Voice dashboard URL in your browser. Enter your email address and password on the login page, then click **Sign In**.
+  <Step title="Accept your invitation">
+    Open the invitation sent to your email address and select **Accept invitation**. Complete the account setup form, then select **Save and continue**.
 
-    If you haven't received your credentials yet, contact your LotTech administrator or your LotTech representative. They'll provision your account and send you a welcome email with a link to set your password.
+    If you already have an account, sign in with your existing email and password. See [Sign in and invitations](/account/sign-up) for help.
   </Step>
-  <Step title="Select your rooftop">
-    After a successful login, the dashboard automatically redirects you based on your role. Admins land on the cross-rooftop **Admin** dashboard at `/dashboard/admin`. All other users are taken directly to their assigned rooftop's dashboard.
-
-    If you manage multiple rooftop locations, use the **rooftop switcher** in the left sidebar to change locations. All data you see — interactions, requests, inventory, orders — belongs to the rooftop currently selected. Switch rooftops at any time without logging out.
+  <Step title="Check your dealership">
+    Confirm the dealership name at the top of the dashboard. If you have access to several locations, use the dealership selector to choose where you want to work.
   </Step>
-  <Step title="Review your dashboard">
-    The home page gives you an at-a-glance view of what's happening at your rooftop right now:
+  <Step title="Check your profile and notifications">
+    Open **Settings**. Confirm your name and phone number, then select **Save Changes** if you edit them.
 
-    - **Analytics** — key performance metrics for your rooftop, including total interactions, requests created, and average fulfillment time. Visible to users with the Reporting module enabled.
-    - **Needs attention** — your oldest pending requests that have not yet been assigned or resolved, sorted with the most overdue at the top.
-    - **My requests** — pending requests assigned specifically to you.
-    - **Recent activity** — the last 8 interactions handled by the AI voice agent.
-
-    Take a moment to familiarize yourself with the layout before moving on to configuration.
+    Under **Notifications**, turn on **Email notifications** if you want alerts for new requests and customer follow-up. Set **Voice transfers** to control whether callers can be transferred to your phone when they ask for you by name. These toggles save automatically.
   </Step>
-  <Step title="Configure your voice agent">
-    Go to **Rooftop Settings > Overview** to set up the core details your voice agent needs to handle calls correctly:
-
-    1. **Phone number** — Connect the Twilio phone number customers will call. This is the number the AI agent monitors for inbound calls.
-    2. **AI voice** — Choose a voice from the Rime or Cartesia TTS providers to match the tone of your dealership.
-    3. **Business hours** — Define when your dealership is open so the agent can greet callers appropriately and manage after-hours expectations.
-
-    Save your settings before moving to the next step. Changes take effect immediately.
+  <Step title="Review customer activity">
+    Open **Activity** to review customer conversations. Open a conversation to read the details and review any available transcript or recording.
   </Step>
-  <Step title="Handle your first call">
-    With your rooftop configured, your AI voice agent is live. Call the Twilio number you connected in the previous step to hear the agent in action.
-
-    After the call ends, return to your dashboard. You'll see:
-
-    - A new entry in **Interactions** with a full transcript and recording
-    - Any **requests** the agent captured during the call
-    - An updated entry in **Call Logs**
-
-    Your team can now review, assign, and resolve requests directly from the dashboard — no manual call notes required.
+  <Step title="Follow up on requests">
+    Open **Requests** to find work that needs attention. Review the customer's details and request history before contacting them, then keep the request's assignment and status up to date.
   </Step>
 </Steps>
 
 <Note>
-  Admins can create additional rooftops and invite new users from the **Admin** panel. If you need to add a team member or set up a second location, head to **Admin > Manage Users** or **Admin > Rooftops**.
+  Your sidebar depends on your role and the features enabled at your dealership. If a section is missing, ask your rooftop admin to check your access.
 </Note>
 
-## What's next?
+## If you are a rooftop admin
 
-<CardGroup cols={2}>
-  <Card title="Configure Your Voice Agent" icon="microphone" href="/rooftop/configure-voice">
-    Customize your AI voice, adjust conversation flows, and connect your calendar and payment integrations.
-  </Card>
-  <Card title="Roles and Permissions" icon="shield-halved" href="/account/roles-and-permissions">
-    Understand how Admin and Manager roles work, and how module permissions control access to each area of the platform.
-  </Card>
-  <Card title="Manage Requests" icon="list-check" href="/communications/requests">
-    Learn how to assign, update, and resolve service, parts, and cosmetic requests captured by the voice agent.
-  </Card>
-  <Card title="Analytics" icon="chart-line" href="/analytics/overview">
-    Explore KPI dashboards, trend charts, and period-over-period reporting to measure your voice agent's impact.
-  </Card>
-</CardGroup>
+After checking your own account, review:
+
+1. [Your team](/rooftop/team-management) — invite teammates and assign the roles they need.
+2. [Email notifications](/account/email-notifications) — check who will receive alerts.
+3. [Business hours and closures](/rooftop/business-hours) — confirm the information callers will hear.
+4. [Phone numbers and transfers](/rooftop/phone-and-transfers) — confirm where calls should go.
+5. [Your receptionist's voice](/rooftop/configure-voice) — preview and save the settings for your dealership.
+
+If you received an invitation to finish setting up a new dealership, follow [Dealership setup](/rooftop/setup).
